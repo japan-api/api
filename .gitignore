@@ -109,6 +109,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.idea/
+idea
+.idea
+idea/
+coverage
 
 # Spyder project settings
 .spyderproject
