@@ -1,10 +1,11 @@
-# Japan API 🗾
-WIP! Currently there are 2 prefectures with 10 fields<br>
+# Japan API 🗾🎌
+WIP! Currently there are <b>7</b> prefectures and <b>15</b> fields<br>
 A Complete REST API about Prefectures of Japan using Flask<br>
-Most of the data is taken from Wikipedia<br>
+Most of the data is taken from the Wikipedia<br>
+If you have noticed some mistakes or bugs, or maybe you have some suggestions please make pull request.
 
 # Preview 🔍
-<img src="https://i.imgur.com/cns4YI1.jpg">
+<img src="https://i.imgur.com/HOSzZKu.jpg">
 
 # What I Learned 🧠
 * Flask basics: routing, serving, server

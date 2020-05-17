@@ -113,6 +113,7 @@ venv.bak/
 idea
 .idea
 idea/
+idea/inspectionProfiles
 coverage
 
 # Spyder project settings
