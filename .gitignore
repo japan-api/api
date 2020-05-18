@@ -115,6 +115,7 @@ idea
 idea/
 idea/inspectionProfiles
 coverage
+coverage/
 
 # Spyder project settings
 .spyderproject
