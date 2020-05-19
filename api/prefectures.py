@@ -284,3 +284,155 @@ niigata = {
     "iso": "JP-15",
     "area-code": "25",
 }
+
+toyama = {
+    "name": "Toyama",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Toyama",
+    "population": f"{toyama_population}",
+    "density": f"{toyama_density}",
+    "density-sq": f"{toyama_density_sq}",
+    "area": "4,247.61 km2",
+    "area-sq": "1,640.01 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Masuzushi",
+    "industries": ['Agriculture', 'Manufacturing', 'Energy'],
+    "name-kanji": "富山県",
+    "capital-kanji": "富山市",
+    "iso": "JP-16",
+    "area-code": "076"
+}
+
+ishikawa = {
+    "name": "Ishikawa",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Kanazawa",
+    "population": f"{ishikawa_population}",
+    "density": f"{ishikawa_density}",
+    "density-sq": f"{ishikawa_density_sq}",
+    "area": "4,186.09 km2",
+    "area-sq": "1,616.26 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Kabura Zushi",
+    "industries": ['Textile industry', 'Artificial fabrics', 'Machine industry'],
+    "name-kanji": "石川県",
+    "capital-kanji": "金沢市",
+    "iso": "JP-17",
+    "area-code": "076"
+}
+
+fukui = {
+    "name": "Fukui",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Fukui",
+    "population": f"{fukui_population}",
+    "density": f"{fukui_density}",
+    "density-sq": f"{fukui_density_sq}",
+    "area": "4,190.49 km2",
+    "area-sq": "1,617.96 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Oroshi Soba",
+    "industries": ['Nuclear power', 'Glasses production '],
+    "name-kanji": "福井県",
+    "capital-kanji": "福井市",
+    "iso": "JP-18",
+    "area-code": "077"
+}
+
+yamanashi = {
+    "name": "Yamanashi",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Kōfu",
+    "population": f"{yamanashi_population}",
+    "density": f"{yamanashi_density}",
+    "density-sq": f"{yamanashi_density_sq}",
+    "area": "4,465.27 km2",
+    "area-sq": "1,724.05 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Houtou",
+    "industries": ['Jewerly', 'Robotics', 'Wine production', 'Mineral water', 'Fruit growing'],
+    "name-kanji": "山梨県",
+    "capital-kanji": "甲府市",
+    "iso": "JP-19",
+    "area-code": "055"
+}
+
+nagano = {
+    "name": "Nagano",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Nagano",
+    "population": f"{nagano_population}",
+    "density": f"{nagano_density}",
+    "density-sq": f"{nagano_density_sq}",
+    "area": "13,561.56 km2",
+    "area-sq": "5,236.15 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Shinshuu Soba",
+    "industries": ['Electronics', 'Information technology', 'Precision machinery', 'Agriculture', 'Tourism'],
+    "name-kanji": "長野県",
+    "capital-kanji": "長野市",
+    "iso": "JP-20",
+    "area-code": "026"
+}
+
+gifu = {
+    "name": "Gifu",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Gifu",
+    "population": f"{gifu_population}",
+    "density": f"{gifu_density}",
+    "density-sq": f"{gifu_density_sq}",
+    "area": "10,621.29 km2",
+    "area-sq": "4,100.90 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Kurikinton",
+    "industries": ['Fishing', 'Heavy industry', 'Science', 'Paper', 'Tourism'],
+    "name-kanji": "岐阜県",
+    "capital-kanji": "岐阜市",
+    "iso": "JP-21",
+    "area-code": "058"
+}
+
+shizuoka = {
+    "name": "Shizuoka",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Shizuoka",
+    "population": f"{shizuoka_population}",
+    "density": f"{shizuoka_density}",
+    "density-sq": f"{shizuoka_density_sq}",
+    "area": "7,777.42 km2",
+    "area-sq": "3,002.88 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Sakuraebi Ryouri",
+    "industries": ['Agriculture', 'Forestry', 'Fishing', 'Tourism'],
+    "name-kanji": "静岡県",
+    "capital-kanji": "静岡市",
+    "iso": "JP-22",
+    "area-code": "054"
+}
+
+aichi = {
+    "name": "Aichi",
+    "region": "Chūbu",
+    "island": "Honshu",
+    "capital": "Nagoya",
+    "population": f"{aichi_population}",
+    "density": f"{aichi_density}",
+    "density-sq": f"{aichi_density_sq}",
+    "area": "5,172.92 km2",
+    "area-sq": "1,997.28 sq mi",
+    "climate": "Humid subtropical",
+    "local-dish": "Hitsumabushi",
+    "industries": ['Heavy industry', 'Electronics', 'Transport industry'],
+    "name-kanji": "愛知県",
+    "capital-kanji": "名古屋市",
+    "iso": "JP-23",
+    "area-code": "052"
+}
