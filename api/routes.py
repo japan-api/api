@@ -116,3 +116,38 @@ def get_shizuoka():
 @app.route('/api/v1/aichi')
 def get_aichi():
     return jsonify(aichi)
+
+
+@app.route('/api/v1/mie')
+def get_mie():
+    return jsonify(mie)
+
+
+@app.route('/api/v1/shiga')
+def get_shiga():
+    return jsonify(shiga)
+
+
+@app.route('/api/v1/kyoto')
+def get_kyoto():
+    return jsonify(kyoto)
+
+
+@app.route('/api/v1/osaka')
+def get_osaka():
+    return jsonify(osaka)
+
+
+@app.route('/api/v1/hyogo')
+def get_hyogo():
+    return jsonify(hyogo)
+
+
+@app.route('/api/v1/nara')
+def get_nara():
+    return jsonify(nara)
+
+
+@app.route('/api/v1/wakayama')
+def get_wakayama():
+    return jsonify(wakayama)

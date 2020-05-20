@@ -207,3 +207,66 @@ aichi_population = f"{raw_ai_pop[0]}"
 aichi_density = f"{raw_ai_den[0]}{raw_ai_den[1]}"
 aichi_density_sq = f"{raw_ai_den[2].replace('(', '').replace(')', '')}"
 aichi_density_sq = aichi_density_sq.strip()
+
+mie_page = requests.get('https://en.wikipedia.org/wiki/Mie_prefecture')
+mie_soup = BeautifulSoup(mie_page.text, 'html.parser')
+raw_mie_pop = mie_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_mie_den = mie_soup.find_all('td')[16].find_all(text=True, recursive=True)
+mie_population = f"{raw_mie_pop[0]}"
+mie_density = f"{raw_mie_den[0]}{raw_mie_den[1]}"
+mie_density_sq = f"{raw_mie_den[2].replace('(', '').replace(')', '')}"
+mie_density_sq = mie_density_sq.strip()
+
+shiga_page = requests.get('https://en.wikipedia.org/wiki/Shiga_prefecture')
+shiga_soup = BeautifulSoup(shiga_page.text, 'html.parser')
+raw_shig_pop = shiga_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_shig_den = shiga_soup.find_all('td')[15].find_all(text=True, recursive=True)
+shiga_population = f"{raw_shig_pop[0]}"
+shiga_density = f"{raw_shig_den[0]}{raw_shig_den[1]}"
+shiga_density_sq = f"{raw_shig_den[2].replace('(', '').replace(')', '')}"
+shiga_density_sq = shiga_density_sq.strip()
+
+kyoto_page = requests.get('https://en.wikipedia.org/wiki/Kyoto_prefecture')
+kyoto_soup = BeautifulSoup(kyoto_page.text, 'html.parser')
+raw_ky_pop = kyoto_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_ky_den = kyoto_soup.find_all('td')[16].find_all(text=True, recursive=True)
+kyoto_population = f"{raw_ky_pop[0]}"
+kyoto_density = f"{raw_ky_den[0]}{raw_ky_den[1]}"
+kyoto_density_sq = f"{raw_ky_den[2].replace('(', '').replace(')', '')}"
+kyoto_density_sq = kyoto_density_sq.strip()
+
+osaka_page = requests.get('https://en.wikipedia.org/wiki/Osaka_prefecture')
+osaka_soup = BeautifulSoup(osaka_page.text, 'html.parser')
+raw_os_pop = osaka_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_os_den = osaka_soup.find_all('td')[16].find_all(text=True, recursive=True)
+osaka_population = f"{raw_os_pop[0]}"
+osaka_density = f"{raw_os_den[0]}{raw_os_den[1]}"
+osaka_density_sq = f"{raw_os_den[2].replace('(', '').replace(')', '')}"
+osaka_density_sq = osaka_density_sq.strip()
+
+hyogo_page = requests.get('https://en.wikipedia.org/wiki/Hyogo_prefecture')
+hyogo_soup = BeautifulSoup(hyogo_page.text, 'html.parser')
+raw_hy_pop = hyogo_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_hy_den = hyogo_soup.find_all('td')[15].find_all(text=True, recursive=True)
+hyogo_population = f"{raw_hy_pop[0]}"
+hyogo_density = f"{raw_hy_den[0]}{raw_hy_den[1]}"
+hyogo_density_sq = f"{raw_hy_den[2].replace('(', '').replace(')', '')}"
+hyogo_density_sq = hyogo_density_sq.strip()
+
+nara_page = requests.get('https://en.wikipedia.org/wiki/Nara_prefecture')
+nara_soup = BeautifulSoup(nara_page.text, 'html.parser')
+raw_nar_pop = nara_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_nar_den = nara_soup.find_all('td')[15].find_all(text=True, recursive=True)
+nara_population = f"{raw_nar_pop[0]}"
+nara_density = f"{raw_nar_den[0]}{raw_nar_den[1]}"
+nara_density_sq = f"{raw_nar_den[2].replace('(', '').replace(')', '')}"
+nara_density_sq = nara_density_sq.strip()
+
+wakayama_page = requests.get('https://en.wikipedia.org/wiki/Wakayama_prefecture')
+wakayama_soup = BeautifulSoup(wakayama_page.text, 'html.parser')
+raw_wa_pop = wakayama_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_wa_den = wakayama_soup.find_all('td')[15].find_all(text=True, recursive=True)
+wakayama_population = f"{raw_wa_pop[0]}"
+wakayama_density = f"{raw_wa_den[0]}{raw_wa_den[1]}"
+wakayama_density_sq = f"{raw_wa_den[2].replace('(', '').replace(')', '')}"
+wakayama_density_sq = wakayama_density_sq.strip()
