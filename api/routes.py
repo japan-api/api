@@ -151,3 +151,48 @@ def get_nara():
 @app.route('/api/v1/wakayama')
 def get_wakayama():
     return jsonify(wakayama)
+
+
+@app.route('/api/v1/tottori')
+def get_tottori():
+    return jsonify(tottori)
+
+
+@app.route('/api/v1/shimane')
+def get_shimane():
+    return jsonify(shimane)
+
+
+@app.route('/api/v1/okayama')
+def get_okayama():
+    return jsonify(okayama)
+
+
+@app.route('/api/v1/hiroshima')
+def get_hiroshima():
+    return jsonify(hiroshima)
+
+
+@app.route('/api/v1/yamaguchi')
+def get_yamaguchi():
+    return jsonify(yamaguchi)
+
+
+@app.route('/api/v1/tokushima')
+def get_tokushima():
+    return jsonify(tokushima)
+
+
+@app.route('/api/v1/kagawa')
+def get_kagawa():
+    return jsonify(kagawa)
+
+
+@app.route('/api/v1/ehime')
+def get_ehime():
+    return jsonify(ehime)
+
+
+@app.route('/api/v1/kochi')
+def get_kochi():
+    return jsonify(kochi)

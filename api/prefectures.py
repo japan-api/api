@@ -562,10 +562,143 @@ wakayama = {
     "area": "4,724.69 km2",
     "area-sq": "1,824.21 sq mi",
     "climate": "Humid subtropical",
-    "local-dishes": [' Kujira no Tatsuta Age', 'Meharizushi', 'Kue Nabe'],
+    "local-dishes": ['Kujira no Tatsuta Age', 'Meharizushi', 'Kue Nabe'],
     "industries": ['Agriculture', 'Tourism', 'Farming'],
     "name-kanji": "和歌山県",
     "capital-kanji": "和歌山市",
     "iso": "JP-30",
     "area-code": "075"
+}
+
+tottori = {
+    "name": "Tottori",
+    "region": "Chūgoku",
+    "island": "Honshu",
+    "capital": "Tottori",
+    "population": f"{tottori_population}",
+    "density": f"{tottori_density}",
+    "density-sq": f"{tottori_density_sq}",
+    "area": "3,507.05 km2",
+    "area-sq": "1,354.08 sq mi",
+    "climate": "Humid subtropical",
+    "local-dishes": ['Matsubagani Ryouri', 'Kanijuu', 'Oyama Okowa'],
+    "industries": ['Agriculture', 'Farming', 'Fishing', 'Seafood'],
+    "name-kanji": "鳥取県",
+    "capital-kanji": "鳥取市",
+    "iso": "JP-31",
+    "area-code": "085"
+}
+
+shimane = {
+    "name": "Shimane",
+    "region": "Chūgoku",
+    "island": "Honshu",
+    "capital": "Matsue",
+    "population": f"{shimane_population}",
+    "density": f"{shimane_density}",
+    "density-sq": f"{shimane_density_sq}",
+    "area": "6,708.24 km2",
+    "area-sq": "2,590.07 sq mi",
+    "climate": "Humid subtropical",
+    "local-dishes": ['Izumo Soba', 'Shijimi Jiru', 'Taimeishi'],
+    "industries": ['Retail industry', 'Manufacturing industry', 'Finance'],
+    "name-kanji": "島根県",
+    "capital-kanji": "松江市",
+    "iso": "JP-32",
+    "area-code": "085"
+}
+
+okayama = {
+    "name": "Okayama",
+    "region": "Chūgoku",
+    "island": "Honshu",
+    "capital": "Okayama",
+    "population": f"{okayama_population}",
+    "density": f"{okayama_density}",
+    "density-sq": f"{okayama_density_sq}",
+    "area": "7,114.50 km2",
+    "area-sq": "2,746.92 sq mi",
+    "climate": "Humid subtropical",
+    "local-dishes": ['Okayama Barazushi', 'Hiruzen Okowa', 'Mamakari Zushi'],
+    "industries": ['Tourism', 'Automotive manufacturing', 'Agricultural machinery', 'Shipbuilding'],
+    "name-kanji": "岡山県",
+    "capital-kanji": "岡山市",
+    "iso": "JP-33",
+    "area-code": "086"
+}
+
+hiroshima = {
+    "name": "Hiroshima",
+    "region": "Chūgoku",
+    "island": "Honshu",
+    "capital": "Hiroshima",
+    "population": f"{hiroshima_population}",
+    "density": f"{hiroshima_density}",
+    "density-sq": f"{hiroshima_density_sq}",
+    "area": "8,479.63 km2",
+    "area-sq": "3,274.00 sq mi",
+    "climate": "Humid subtropical",
+    "local-dishes": ['Hiroshima Okonomiyaki', 'Kaki Ryouri', 'Anago Meshidon'],
+    "industries": ['Tourism', 'Automobiles', 'Manufacturing'],
+    "name-kanji": "広島県",
+    "capital-kanji": "広島市",
+    "iso": "JP-34",
+    "area-code": "082"
+}
+
+yamaguchi = {
+    "name": "Yamaguchi",
+    "region": "Chūgoku",
+    "island": "Honshu",
+    "capital": "Yamaguchi",
+    "population": f"{yamaguchi_population}",
+    "density": f"{yamaguchi_density}",
+    "density-sq": f"{yamaguchi_density_sq}",
+    "area": "6,112.30 km2",
+    "area-sq": "2,359.97 sq mi",
+    "climate": "Humid subtropical",
+    "local-dishes": ['Fugu Ryouri', 'Fugu Sashi', 'Shirouo Ryouri'],
+    "industries": ['Machine building', 'Metallurgy', 'Textile', 'Chemical products'],
+    "name-kanji": "山口県",
+    "capital-kanji": "山口市",
+    "iso": "JP-35",
+    "area-code": "083"
+}
+
+tokushima = {
+    "name": "Tokushima",
+    "region": "Shikoku",
+    "island": "Shikoku",
+    "capital": "Tokushima",
+    "population": f"{tokushima_population}",
+    "density": f"{tokushima_density}",
+    "density-sq": f"{tokushima_density_sq}",
+    "area": "4,146.80 km2",
+    "area-sq": "1,601.09 sq mi",
+    "climate": "Humid subtropical",
+    "local-dishes": ['Sobagome Zosui', 'Tarai Udon', 'Iya Soba'],
+    "industries": ['Agriculture', 'Forestry', 'Fishery'],
+    "name-kanji": "徳島県",
+    "capital-kanji": "徳島市",
+    "iso": "JP-36",
+    "area-code": "088"
+}
+
+kagawa = {
+    "name": "Kagawa",
+    "region": "Shikoku",
+    "island": "Shikoku",
+    "capital": "Takamatsu",
+    "population": f"{kagawa_population}",
+    "density": f"{kagawa_density}",
+    "density-sq": f"{kagawa_density_sq}",
+    "area": "1,876.77 km2",
+    "area-sq": "724.62 sq mi",
+    "climate": "Humid subtropical",
+    "local-dishes": ['Sanuki Udon', 'Shippoku Udon', 'Iriko Meshi'],
+    "industries": ['Agriculture', 'Forestry', 'Fishery'],
+    "name-kanji": "香川県",
+    "capital-kanji": "高松市",
+    "iso": "JP-37",
+    "area-code": "087"
 }

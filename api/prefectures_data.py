@@ -270,3 +270,58 @@ wakayama_population = f"{raw_wa_pop[0]}"
 wakayama_density = f"{raw_wa_den[0]}{raw_wa_den[1]}"
 wakayama_density_sq = f"{raw_wa_den[2].replace('(', '').replace(')', '')}"
 wakayama_density_sq = wakayama_density_sq.strip()
+
+tottori_page = requests.get('https://en.wikipedia.org/wiki/Tottori_prefecture')
+tottori_soup = BeautifulSoup(tottori_page.text, 'html.parser')
+raw_tot_pop = tottori_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_tot_den = tottori_soup.find_all('td')[16].find_all(text=True, recursive=True)
+tottori_population = f"{raw_tot_pop[0]}"
+tottori_density = f"{raw_tot_den[0]}{raw_tot_den[1]}"
+tottori_density_sq = f"{raw_tot_den[2].replace('(', '').replace(')', '')}"
+tottori_density_sq = tottori_density_sq.strip()
+
+shimane_page = requests.get('https://en.wikipedia.org/wiki/Shimane_prefecture')
+shimane_soup = BeautifulSoup(shimane_page.text, 'html.parser')
+raw_shim_pop = shimane_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_shim_den = shimane_soup.find_all('td')[15].find_all(text=True, recursive=True)
+shimane_population = f"{raw_shim_pop[0]}"
+shimane_density = f"{raw_shim_den[0]}{raw_shim_den[1]}"
+shimane_density_sq = f"{raw_shim_den[2].replace('(', '').replace(')', '')}"
+shimane_density_sq = tottori_density_sq.strip()
+
+okayama_page = requests.get('https://en.wikipedia.org/wiki/Okayama_prefecture')
+okayama_soup = BeautifulSoup(okayama_page.text, 'html.parser')
+raw_ok_pop = okayama_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_ok_den = okayama_soup.find_all('td')[15].find_all(text=True, recursive=True)
+okayama_population = f"{raw_ok_pop[0]}"
+okayama_density = f"{raw_ok_den[0]}{raw_ok_den[1]}"
+okayama_density_sq = f"{raw_ok_den[2].replace('(', '').replace(')', '')}"
+okayama_density_sq = okayama_density_sq.strip()
+
+hiroshima_page = requests.get('https://en.wikipedia.org/wiki/Hiroshima_prefecture')
+hiroshima_soup = BeautifulSoup(hiroshima_page.text, 'html.parser')
+raw_hi_pop = hiroshima_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_hi_den = hiroshima_soup.find_all('td')[15].find_all(text=True, recursive=True)
+hiroshima_population = f"{raw_hi_pop[0]}"
+hiroshima_density = f"{raw_hi_den[0]}{raw_hi_den[1]}"
+hiroshima_density_sq = f"{raw_hi_den[2].replace('(', '').replace(')', '')}"
+hiroshima_density_sq = hiroshima_density_sq.strip()
+
+yamaguchi_page = requests.get('https://en.wikipedia.org/wiki/Yamaguchi_prefecture')
+yamaguchi_soup = BeautifulSoup(yamaguchi_page.text, 'html.parser')
+raw_yama_pop = yamaguchi_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_yama_den = yamaguchi_soup.find_all('td')[16].find_all(text=True, recursive=True)
+yamaguchi_population = f"{raw_yama_pop[0]}"
+yamaguchi_density = f"{raw_yama_den[0]}{raw_yama_den[1]}"
+yamaguchi_density_sq = f"{raw_yama_den[2].replace('(', '').replace(')', '')}"
+yamaguchi_density_sq = yamaguchi_density_sq.strip()
+
+tokushima_page = requests.get('https://en.wikipedia.org/wiki/Tokushima_prefecture')
+tokushima_soup = BeautifulSoup(tokushima_page.text, 'html.parser')
+raw_toku_pop = tokushima_soup.find_all('td')[15].find_all(text=True, recursive=True)
+raw_toku_den = tokushima_soup.find_all('td')[17].find_all(text=True, recursive=True)
+tokushima_population = f"{raw_toku_pop[0]}"
+tokushima_density = f"{raw_toku_den[0]}{raw_toku_den[1]}"
+tokushima_density_sq = f"{raw_toku_den[2].replace('(', '').replace(')', '')}"
+tokushima_density_sq = tokushima_density_sq.strip()
+
