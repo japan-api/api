@@ -196,3 +196,43 @@ def get_ehime():
 @app.route('/api/v1/kochi')
 def get_kochi():
     return jsonify(kochi)
+
+
+@app.route('/api/v1/fukuoka')
+def get_fukuoka():
+    return jsonify(fukuoka)
+
+
+@app.route('/api/v1/saga')
+def get_saga():
+    return jsonify(saga)
+
+
+@app.route('/api/v1/nagasaki')
+def get_nagasaki():
+    return jsonify(nagasaki)
+
+
+@app.route('/api/v1/kumamoto')
+def get_kumamoto():
+    return jsonify(kumamoto)
+
+
+@app.route('/api/v1/oita')
+def get_oita():
+    return jsonify(oita)
+
+
+@app.route('/api/v1/miyazaki')
+def get_miyazaki():
+    return jsonify(miyazaki)
+
+
+@app.route('/api/v1/kagoshima')
+def get_kagoshima():
+    return jsonify(kagoshima)
+
+
+@app.route('/api/v1/okinawa')
+def get_okinawa():
+    return jsonify(okinawa)
