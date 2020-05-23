@@ -1,6 +1,29 @@
 import requests
 from bs4 import BeautifulSoup
 
+japan_page = requests.get('https://en.wikipedia.org/wiki/Japan')
+japan_soup = BeautifulSoup(japan_page.text, 'html.parser')
+raw_ja_pop = japan_soup.find_all('td')[20].find_all(text=True, recursive=True)
+raw_ja_den = japan_soup.find_all('td')[22].find_all(text=True, recursive=True)
+gdp_ppp = japan_soup.find_all('td')[24].find_all(text=True, recursive=True)
+gdp_ppp_per = japan_soup.find_all('td')[25].find_all(text=True, recursive=True)
+gdp_nom = japan_soup.find_all('td')[27].find_all(text=True, recursive=True)
+gdp_nom_per = japan_soup.find_all('td')[28].find_all(text=True, recursive=True)
+japan_emperor = japan_soup.find_all('td')[8].find_all(text=True, recursive=True)
+japan_minister = japan_soup.find_all('td')[9].find_all(text=True, recursive=True)
+japan_emperor = f"{japan_emperor[0]}"
+japan_minister = f"{japan_minister[0]}"
+gdp_nom = f"{gdp_nom[0].strip()}"
+gdp_ppp = f"{gdp_ppp[0].strip()}"
+gdp_nom_per = f"{gdp_nom_per[0].replace('(', '')}"
+gdp_ppp_per = f"{gdp_ppp_per[0].replace('(', '')}"
+japan_population = f"{raw_ja_pop[0]}"
+japan_density = f"{raw_ja_den[0]}{raw_ja_den[1]}"
+japan_density_mi = f"{raw_ja_den[2].replace('(', '').replace(')', '')}"
+japan_density_mi = japan_density_mi.strip()
+gdp_ppp_per = gdp_ppp_per.strip()
+gdp_nom_per = gdp_nom_per.strip()
+
 hokkaido_page = requests.get('https://en.wikipedia.org/wiki/Hokkaido')
 hokkaido_soup = BeautifulSoup(hokkaido_page.text, 'html.parser')
 raw_hok_pop = hokkaido_soup.find_all('td')[14].find_all(text=True, recursive=True)
@@ -287,7 +310,7 @@ raw_shim_den = shimane_soup.find_all('td')[15].find_all(text=True, recursive=Tru
 shimane_population = f"{raw_shim_pop[0]}"
 shimane_density = f"{raw_shim_den[0]}{raw_shim_den[1]}"
 shimane_density_mi = f"{raw_shim_den[2].replace('(', '').replace(')', '')}"
-shimane_density_mi = tottori_density_mi.strip()
+shimane_density_mi = shimane_density_mi.strip()
 
 okayama_page = requests.get('https://en.wikipedia.org/wiki/Okayama_prefecture')
 okayama_soup = BeautifulSoup(okayama_page.text, 'html.parser')
@@ -351,3 +374,75 @@ kochi_population = f"{raw_ko_pop[0]}"
 kochi_density = f"{raw_ko_den[0]}{raw_ko_den[1]}"
 kochi_density_mi = f"{raw_ko_den[2].replace('(', '').replace(')', '')}"
 kochi_density_mi = kochi_density_mi.strip()
+
+fukuoka_page = requests.get('https://en.wikipedia.org/wiki/Fukuoka_prefecture')
+fukuoka_soup = BeautifulSoup(fukuoka_page.text, 'html.parser')
+raw_fuku_pop = fukuoka_soup.find_all('td')[16].find_all(text=True, recursive=True)
+raw_fuku_den = fukuoka_soup.find_all('td')[18].find_all(text=True, recursive=True)
+fukuoka_population = f"{raw_fuku_pop[0]}"
+fukuoka_density = f"{raw_fuku_den[0]}{raw_fuku_den[1]}"
+fukuoka_density_mi = f"{raw_fuku_den[2].replace('(', '').replace(')', '')}"
+fukuoka_density_mi = fukuoka_density_mi.strip()
+
+saga_page = requests.get('https://en.wikipedia.org/wiki/Saga_prefecture')
+saga_soup = BeautifulSoup(saga_page.text, 'html.parser')
+raw_sag_pop = saga_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_sag_den = saga_soup.find_all('td')[15].find_all(text=True, recursive=True)
+saga_population = f"{raw_sag_pop[0]}"
+saga_density = f"{raw_sag_den[0]}{raw_sag_den[1]}"
+saga_density_mi = f"{raw_sag_den[2].replace('(', '').replace(')', '')}"
+saga_density_mi = saga_density_mi.strip()
+
+nagasaki_page = requests.get('https://en.wikipedia.org/wiki/Nagasaki_prefecture')
+nagasaki_soup = BeautifulSoup(nagasaki_page.text, 'html.parser')
+raw_nag_pop = nagasaki_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_nag_den = nagasaki_soup.find_all('td')[15].find_all(text=True, recursive=True)
+nagasaki_population = f"{raw_nag_pop[0]}"
+nagasaki_density = f"{raw_nag_den[0]}{raw_nag_den[1]}"
+nagasaki_density_mi = f"{raw_nag_den[2].replace('(', '').replace(')', '')}"
+nagasaki_density_mi = nagasaki_density_mi.strip()
+
+kumamoto_page = requests.get('https://en.wikipedia.org/wiki/Kumamoto_prefecture')
+kumamoto_soup = BeautifulSoup(kumamoto_page.text, 'html.parser')
+raw_ku_pop = kumamoto_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_ku_den = kumamoto_soup.find_all('td')[16].find_all(text=True, recursive=True)
+kumamoto_population = f"{raw_ku_pop[0]}"
+kumamoto_density = f"{raw_ku_den[0]}{raw_ku_den[1]}"
+kumamoto_density_mi = f"{raw_ku_den[2].replace('(', '').replace(')', '')}"
+kumamoto_density_mi = kumamoto_density_mi.strip()
+
+oita_page = requests.get('https://en.wikipedia.org/wiki/Oita_prefecture')
+oita_soup = BeautifulSoup(oita_page.text, 'html.parser')
+raw_oi_pop = oita_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_oi_den = oita_soup.find_all('td')[16].find_all(text=True, recursive=True)
+oita_population = f"{raw_oi_pop[0]}"
+oita_density = f"{raw_oi_den[0]}{raw_oi_den[1]}"
+oita_density_mi = f"{raw_oi_den[2].replace('(', '').replace(')', '')}"
+oita_density_mi = oita_density_mi.strip()
+
+miyazaki_page = requests.get('https://en.wikipedia.org/wiki/Miyazaki_prefecture')
+miyazaki_soup = BeautifulSoup(miyazaki_page.text, 'html.parser')
+raw_miya_pop = miyazaki_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_miya_den = miyazaki_soup.find_all('td')[15].find_all(text=True, recursive=True)
+miyazaki_population = f"{raw_miya_pop[0]}"
+miyazaki_density = f"{raw_miya_den[0]}{raw_miya_den[1]}"
+miyazaki_density_mi = f"{raw_miya_den[2].replace('(', '').replace(')', '')}"
+miyazaki_density_mi = miyazaki_density_mi.strip()
+
+kagoshima_page = requests.get('https://en.wikipedia.org/wiki/Kagoshima_prefecture')
+kagoshima_soup = BeautifulSoup(kagoshima_page.text, 'html.parser')
+raw_kago_pop = kagoshima_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_kago_den = kagoshima_soup.find_all('td')[15].find_all(text=True, recursive=True)
+kagoshima_population = f"{raw_kago_pop[0]}"
+kagoshima_density = f"{raw_kago_den[0]}{raw_kago_den[1]}"
+kagoshima_density_mi = f"{raw_kago_den[2].replace('(', '').replace(')', '')}"
+kagoshima_density_mi = kagoshima_density_mi.strip()
+
+okinawa_page = requests.get('https://en.wikipedia.org/wiki/Okinawa_prefecture')
+okinawa_soup = BeautifulSoup(okinawa_page.text, 'html.parser')
+raw_oki_pop = okinawa_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_oki_den = okinawa_soup.find_all('td')[16].find_all(text=True, recursive=True)
+okinawa_population = f"{raw_oki_pop[0]}"
+okinawa_density = f"{raw_oki_den[0]}{raw_oki_den[1]}"
+okinawa_density_mi = f"{raw_oki_den[2].replace('(', '').replace(')', '')}"
+okinawa_density_mi = okinawa_density_mi.strip()

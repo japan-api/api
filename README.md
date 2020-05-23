@@ -1,6 +1,6 @@
 # Japan API 🎌
 A Complete REST API about Prefectures of Japan using Flask<br>
-<b>WIP!</b> Currently there are <b>39</b> prefectures and <b>16</b> fields<br>
+<b>WIP!</b> (Testing and deploying, fixing bugs, and typos, adding new fields)<br> Currently there are <b>47</b> (All) prefectures and <b>16</b> fields (May add more)<br>
 Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefectures_of_Japan">Wikipedia</a>,
 <a href="https://www.tofugu.com/japan/japanese-food-by-prefecture/">Food data</a>, <a href="http://www.fukushima.climatemps.com">Climate data</a><br>
 If you have noticed some mistakes or bugs, or maybe you have any suggestions please make pull request.
@@ -9,7 +9,58 @@ If you have noticed some mistakes or bugs, or maybe you have any suggestions ple
 <img src="https://i.imgur.com/cTHRAMG.jpg" width="400">
 
 # Docs 📘
-coming soon...
+You can use this API to get detailed information aboout Japan <br>
+Japan API has only GET request method<br>
+Japan API has 48 endpoints (All Prefectures of Japan, + Japan itself)<br>
+
+/api/v1/japan<br>
+/api/v1/hokkaido<br>
+/api/v1/aomori<br>
+/api/v1/iwate<br>
+/api/v1/miyagi<br>
+/api/v1/akita<br>
+/api/v1/yamagata<br>
+/api/v1/fukushima	<br>
+/api/v1/ibaraki<br>
+/api/v1/tochigi<br>
+/api/v1/gunma<br>
+/api/v1/saitama<br>
+/api/v1/chiba<br>
+/api/v1/tokyo<br>
+/api/v1/kanagawa<br>
+/api/v1/niigata<br>
+/api/v1/toyama<br>
+/api/v1/ishikawa<br>
+/api/v1/fukui<br>
+/api/v1/yamanashi<br>
+/api/v1/nagano<br>
+/api/v1/gifu<br>
+/api/v1/shizuoka<br>
+/api/v1/aichi<br>
+/api/v1/mie<br>
+/api/v1/shiga<br>
+/api/v1/kyoto<br>
+/api/v1/osaka<br>
+/api/v1/hyogo<br>
+/api/v1/nara<br>
+/api/v1/wakayama<br>
+/api/v1/tottori<br>
+/api/v1/shimane<br>
+/api/v1/okayama<br>
+/api/v1/hiroshima<br>
+/api/v1/yamaguchi<br>
+/api/v1/tokushima<br>
+/api/v1/kagawa<br>
+/api/v1/ehime<br>
+/api/v1/kochi<br>
+/api/v1/fukuoka<br>
+/api/v1/saga<br>
+/api/v1/nagasaki<br>
+/api/v1/kumamoto<br>
+/api/v1/oita<br>
+/api/v1/miyazaki<br>
+/api/v1/kagoshima<br>
+/api/v1/okinawa<br>
 
 # Usage 👩‍💻👨‍💻
 coming soon...
@@ -21,6 +72,9 @@ coming soon...
 * Flask basics: routing, serving, server
 * REST and Building REST api
 * JSON
+
+# ToDo 
+* Add Governor for each prefecture
 
 # License 📑 
 (c) 2020 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)

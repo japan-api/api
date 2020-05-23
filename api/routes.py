@@ -3,6 +3,11 @@ from flask import jsonify
 from prefectures import *
 
 
+@app.route('/api/v1/japan')
+def get_japan():
+    return jsonify(japan)
+
+
 @app.route('/api/v1/hokkaido')
 def get_hokkaido():
     return jsonify(hokkaido)
