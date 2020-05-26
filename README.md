@@ -13,6 +13,7 @@ You can use this API to get detailed information aboout Japan <br>
 Japan API has only GET request method<br>
 Japan API has 48 endpoints (All Prefectures of Japan, + Japan itself)<br>
 
+# List of endpoints 📜
 /api/v1/japan<br>
 /api/v1/hokkaido<br>
 /api/v1/aomori<br>
@@ -66,15 +67,19 @@ Japan API has 48 endpoints (All Prefectures of Japan, + Japan itself)<br>
 coming soon...
 
 # Quick Start 🚀
-coming soon...
+```git clone https://github.com/irevenko/InfoBot.git``` <br>
+```cd japan-api```<br>
+```pip install requirements.txt OR python -m pip install -r requirements.txt``` <br>
+```cd api``` <br>
+```set FLASK_APP=api.py``` <br>
+```flask run```
 
 # What I Learned 🧠
-* Flask basics: routing, serving, server
+* Flask basics: routing, serving
 * REST and Building REST api
 * JSON
 
 # ToDo 
-* Add Governor for each prefecture
 * Add setup.py
 
 # License 📑 
