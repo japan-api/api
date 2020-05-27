@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-# nom - nominal ppp - purchasing power parity,
-# den - density, pop - population, gov - governor
 
 japan_page = requests.get('https://en.wikipedia.org/wiki/Japan')
 japan_soup = BeautifulSoup(japan_page.text, 'html.parser')
@@ -36,7 +34,9 @@ hokkaido_population = f"{raw_hok_pop[0]}"
 hokkaido_density = f"{raw_hok_den[0]}{raw_hok_den[1]}"
 hokkaido_density_mi = f"{raw_hok_den[2].replace('(', '').replace(')', '')}"
 hokkaido_density_mi = hokkaido_density_mi.strip()
-
+print(raw_hok_gov)
+print(raw_hok_den)
+print(raw_hok_pop)
 aomori_page = requests.get('https://en.wikipedia.org/wiki/Aomori_prefecture')
 aomori_soup = BeautifulSoup(aomori_page.text, 'html.parser')
 raw_ao_pop = aomori_soup.find_all('td')[13].find_all(text=True, recursive=True)

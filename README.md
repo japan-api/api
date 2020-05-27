@@ -14,8 +14,8 @@ Japan API has only GET request method<br>
 Japan API has 48 endpoints (All Prefectures of Japan, + Japan itself)<br>
 
 # List of endpoints 📜
-/api/v1/japan<br>
-/api/v1/hokkaido<br>
+/api/v1/japan<br> Tested
+/api/v1/hokkaido<br> Tested
 /api/v1/aomori<br>
 /api/v1/iwate<br>
 /api/v1/miyagi<br>
@@ -80,7 +80,9 @@ coming soon...
 * JSON
 
 # ToDo 
+* Add new fields (maybe sports)
 * Add setup.py
+* Write tests
 
 # License 📑 
 (c) 2020 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)
