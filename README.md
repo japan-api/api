@@ -1,5 +1,5 @@
 # Japan API 🎌
-A Complete REST API about Prefectures of Japan using Flask<br>
+A Complete REST API about Prefectures of Japan using Python 3.8.3 and Flask<br>
 <b>WIP!</b> (Testing and deploying, fixing bugs, and typos, adding new fields)<br> Currently there are <b>47</b> (All) prefectures and <b>17</b> fields (May add more)<br>
 Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefectures_of_Japan">Wikipedia</a>,
 <a href="https://www.tofugu.com/japan/japanese-food-by-prefecture/">Food data</a>, <a href="http://www.fukushima.climatemps.com">Climate data</a><br>
@@ -14,15 +14,15 @@ Japan API has only GET request method<br>
 Japan API has 48 endpoints (All Prefectures of Japan, + Japan itself)<br>
 
 # List of endpoints 📜
-/api/v1/japan<br> Tested
-/api/v1/hokkaido<br> Tested
-/api/v1/aomori<br>
-/api/v1/iwate<br>
-/api/v1/miyagi<br>
-/api/v1/akita<br>
-/api/v1/yamagata<br>
-/api/v1/fukushima	<br>
-/api/v1/ibaraki<br>
+/api/v1/japan Tested<br> 
+/api/v1/hokkaido Tested <br>
+/api/v1/aomori Tested<br>
+/api/v1/iwate Tested<br>
+/api/v1/miyagi Tested<br>
+/api/v1/akita Tested<br>
+/api/v1/yamagata Tested<br>
+/api/v1/fukushima Tested<br>
+/api/v1/ibaraki Tested<br>
 /api/v1/tochigi<br>
 /api/v1/gunma<br>
 /api/v1/saitama<br>
@@ -80,7 +80,7 @@ coming soon...
 * JSON
 
 # ToDo 
-* Add new fields (maybe sports)
+* Add new fields 
 * Add setup.py
 * Write tests
 
