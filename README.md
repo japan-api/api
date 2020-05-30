@@ -11,9 +11,10 @@ If you have noticed some mistakes or bugs, or maybe you have any suggestions ple
 # Docs 📘
 You can use this API to get detailed information aboout Japan <br>
 Japan API has only GET request method<br>
-Japan API has 48 endpoints (All Prefectures of Japan, + Japan itself)<br>
+Japan API has 49 endpoints (All Prefectures of Japan, + Japan itself + all)<br>
 
 # List of endpoints 📜
+/api/v1/all
 /api/v1/japan Tested<br> 
 /api/v1/hokkaido Tested <br>
 /api/v1/aomori Tested<br>
@@ -23,21 +24,21 @@ Japan API has 48 endpoints (All Prefectures of Japan, + Japan itself)<br>
 /api/v1/yamagata Tested<br>
 /api/v1/fukushima Tested<br>
 /api/v1/ibaraki Tested<br>
-/api/v1/tochigi<br>
-/api/v1/gunma<br>
-/api/v1/saitama<br>
-/api/v1/chiba<br>
-/api/v1/tokyo<br>
-/api/v1/kanagawa<br>
-/api/v1/niigata<br>
-/api/v1/toyama<br>
-/api/v1/ishikawa<br>
-/api/v1/fukui<br>
-/api/v1/yamanashi<br>
-/api/v1/nagano<br>
-/api/v1/gifu<br>
-/api/v1/shizuoka<br>
-/api/v1/aichi<br>
+/api/v1/tochigi Tested<br>
+/api/v1/gunma Tested<br>
+/api/v1/saitama Tested<br>
+/api/v1/chiba Tested<br>
+/api/v1/tokyo Tested<br>
+/api/v1/kanagawa Tested<br>
+/api/v1/niigata Tested<br>
+/api/v1/toyama Tested<br>
+/api/v1/ishikawa Tested<br>
+/api/v1/fukui Tested<br>
+/api/v1/yamanashi Tested<br>
+/api/v1/nagano Tested<br>
+/api/v1/gifu Tested<br>
+/api/v1/shizuoka Tested<br>
+/api/v1/aichi Tested<br>
 /api/v1/mie<br>
 /api/v1/shiga<br>
 /api/v1/kyoto<br>

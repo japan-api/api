@@ -204,13 +204,13 @@ toyama_density_mi = toyama_density_mi.strip()
 
 ishikawa_page = requests.get('https://en.wikipedia.org/wiki/Ishikawa_prefecture')
 ishikawa_soup = BeautifulSoup(ishikawa_page.text, 'html.parser')
-raw_is_pop = ishikawa_soup.find_all('td')[13].find_all(text=True, recursive=True)
-raw_is_den = ishikawa_soup.find_all('td')[15].find_all(text=True, recursive=True)
-raw_is_gov = ishikawa_soup.find_all('td')[10].find_all(text=True, recursive=True)
-ishikawa_governor = f"{raw_is_gov[0]}"
-ishikawa_population = f"{raw_is_pop[0]}"
-ishikawa_density = f"{raw_is_den[0]}{raw_is_den[1]}"
-ishikawa_density_mi = f"{raw_is_den[2].replace('(', '').replace(')', '')}"
+raw_ish_pop = ishikawa_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_ish_den = ishikawa_soup.find_all('td')[15].find_all(text=True, recursive=True)
+raw_ish_gov = ishikawa_soup.find_all('td')[10].find_all(text=True, recursive=True)
+ishikawa_governor = f"{raw_ish_gov[0]}"
+ishikawa_population = f"{raw_ish_pop[0]}"
+ishikawa_density = f"{raw_ish_den[0]}{raw_ish_den[1]}"
+ishikawa_density_mi = f"{raw_ish_den[2].replace('(', '').replace(')', '')}"
 ishikawa_density_mi = ishikawa_density_mi.strip()
 
 fukui_page = requests.get('https://en.wikipedia.org/wiki/Fukui_prefecture')
