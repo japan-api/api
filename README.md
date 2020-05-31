@@ -14,7 +14,7 @@ Japan API has only GET request method<br>
 Japan API has 49 endpoints (All Prefectures of Japan, + Japan itself + all)<br>
 
 # List of endpoints 📜
-/api/v1/all
+/api/v1/all <br>
 /api/v1/japan Tested<br> 
 /api/v1/hokkaido Tested <br>
 /api/v1/aomori Tested<br>
@@ -39,22 +39,22 @@ Japan API has 49 endpoints (All Prefectures of Japan, + Japan itself + all)<br>
 /api/v1/gifu Tested<br>
 /api/v1/shizuoka Tested<br>
 /api/v1/aichi Tested<br>
-/api/v1/mie<br>
-/api/v1/shiga<br>
-/api/v1/kyoto<br>
-/api/v1/osaka<br>
-/api/v1/hyogo<br>
-/api/v1/nara<br>
-/api/v1/wakayama<br>
-/api/v1/tottori<br>
-/api/v1/shimane<br>
-/api/v1/okayama<br>
-/api/v1/hiroshima<br>
-/api/v1/yamaguchi<br>
-/api/v1/tokushima<br>
-/api/v1/kagawa<br>
-/api/v1/ehime<br>
-/api/v1/kochi<br>
+/api/v1/mie Tested<br>
+/api/v1/shiga Tested<br>
+/api/v1/kyoto Tested<br>
+/api/v1/osaka Tested<br>
+/api/v1/hyogo Tested<br>
+/api/v1/nara Tested<br>
+/api/v1/wakayama Tested<br>
+/api/v1/tottori Tested<br>
+/api/v1/shimane Tested<br>
+/api/v1/okayama Tested<br>
+/api/v1/hiroshima Tested<br>
+/api/v1/yamaguchi Tested<br>
+/api/v1/tokushima Tested<br>
+/api/v1/kagawa Tested<br>
+/api/v1/ehime Tested<br>
+/api/v1/kochi Tested<br>
 /api/v1/fukuoka<br>
 /api/v1/saga<br>
 /api/v1/nagasaki<br>
