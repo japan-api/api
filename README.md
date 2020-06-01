@@ -15,46 +15,46 @@ Japan API has 49 endpoints (All Prefectures of Japan, + Japan itself + all)<br>
 
 # List of endpoints 📜
 /api/v1/all <br>
-/api/v1/japan Tested<br> 
-/api/v1/hokkaido Tested <br>
-/api/v1/aomori Tested<br>
-/api/v1/iwate Tested<br>
-/api/v1/miyagi Tested<br>
-/api/v1/akita Tested<br>
-/api/v1/yamagata Tested<br>
-/api/v1/fukushima Tested<br>
-/api/v1/ibaraki Tested<br>
-/api/v1/tochigi Tested<br>
-/api/v1/gunma Tested<br>
-/api/v1/saitama Tested<br>
-/api/v1/chiba Tested<br>
-/api/v1/tokyo Tested<br>
-/api/v1/kanagawa Tested<br>
-/api/v1/niigata Tested<br>
-/api/v1/toyama Tested<br>
-/api/v1/ishikawa Tested<br>
-/api/v1/fukui Tested<br>
-/api/v1/yamanashi Tested<br>
-/api/v1/nagano Tested<br>
-/api/v1/gifu Tested<br>
-/api/v1/shizuoka Tested<br>
-/api/v1/aichi Tested<br>
-/api/v1/mie Tested<br>
-/api/v1/shiga Tested<br>
-/api/v1/kyoto Tested<br>
-/api/v1/osaka Tested<br>
-/api/v1/hyogo Tested<br>
-/api/v1/nara Tested<br>
-/api/v1/wakayama Tested<br>
-/api/v1/tottori Tested<br>
-/api/v1/shimane Tested<br>
-/api/v1/okayama Tested<br>
-/api/v1/hiroshima Tested<br>
-/api/v1/yamaguchi Tested<br>
-/api/v1/tokushima Tested<br>
-/api/v1/kagawa Tested<br>
-/api/v1/ehime Tested<br>
-/api/v1/kochi Tested<br>
+/api/v1/japan <br>
+/api/v1/hokkaido <br>
+/api/v1/aomori <br>
+/api/v1/iwate <br>
+/api/v1/miyagi <br>
+/api/v1/akita <br>
+/api/v1/yamagata <br>
+/api/v1/fukushima <br>
+/api/v1/ibaraki <br>
+/api/v1/tochigi <br>
+/api/v1/gunma <br>
+/api/v1/saitama <br>
+/api/v1/chiba <br>
+/api/v1/tokyo <br>
+/api/v1/kanagawa <br>
+/api/v1/niigata <br>
+/api/v1/toyama <br>
+/api/v1/ishikawa <br>
+/api/v1/fukui <br>
+/api/v1/yamanashi <br>
+/api/v1/nagano <br>
+/api/v1/gifu <br>
+/api/v1/shizuoka <br>
+/api/v1/aichi <br>
+/api/v1/mie <br>
+/api/v1/shiga <br>
+/api/v1/kyoto <br>
+/api/v1/osaka <br>
+/api/v1/hyogo <br>
+/api/v1/nara <br>
+/api/v1/wakayama <br>
+/api/v1/tottori <br>
+/api/v1/shimane <br>
+/api/v1/okayama <br>
+/api/v1/hiroshima <br>
+/api/v1/yamaguchi <br>
+/api/v1/tokushima <br>
+/api/v1/kagawa <br>
+/api/v1/ehime <br>
+/api/v1/kochi <br>
 /api/v1/fukuoka<br>
 /api/v1/saga<br>
 /api/v1/nagasaki<br>
@@ -71,7 +71,9 @@ coming soon...
 ```git clone https://github.com/irevenko/InfoBot.git``` <br>
 ```cd japan-api```<br>
 ```pip install requirements.txt OR python -m pip install -r requirements.txt``` <br>
-```cd api``` <br>
+```cd tests```<br>
+```python test_prefectures.py```<br>
+```cd ../api``` <br>
 ```set FLASK_APP=api.py``` <br>
 ```flask run```
 
@@ -83,7 +85,6 @@ coming soon...
 # ToDo 
 * Add new fields 
 * Add setup.py
-* Write tests
 
 # License 📑 
 (c) 2020 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)

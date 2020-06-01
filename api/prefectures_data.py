@@ -459,7 +459,7 @@ fukuoka_page = requests.get('https://en.wikipedia.org/wiki/Fukuoka_prefecture')
 fukuoka_soup = BeautifulSoup(fukuoka_page.text, 'html.parser')
 raw_fuku_pop = fukuoka_soup.find_all('td')[16].find_all(text=True, recursive=True)
 raw_fuku_den = fukuoka_soup.find_all('td')[18].find_all(text=True, recursive=True)
-raw_fuku_gov = miyagi_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_fuku_gov = fukuoka_soup.find_all('td')[13].find_all(text=True, recursive=True)
 fukuoka_governor = f"{raw_fuku_gov[0]}"
 fukuoka_population = f"{raw_fuku_pop[0]}"
 fukuoka_density = f"{raw_fuku_den[0]}{raw_fuku_den[1]}"

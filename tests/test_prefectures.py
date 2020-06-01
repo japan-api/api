@@ -218,6 +218,46 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_ko_den, ['106.68/km', '2', ' (276.3/sq\xa0mi)'])
         self.assertEqual(raw_ko_gov[0], 'Seiji Hamada')
 
+    def test_fukuoka(self):
+        self.assertEqual(raw_fuku_pop, ['5,109,323'])
+        self.assertEqual(raw_fuku_den, ['1,000/km', '2', ' (2,700/sq\xa0mi)'])
+        self.assertEqual(raw_fuku_gov[0], 'Hiroshi Ogawa')
+
+    def test_saga(self):
+        self.assertEqual(raw_sag_pop, ['813,590'])
+        self.assertEqual(raw_sag_den, ['330/km', '2', ' (860/sq\xa0mi)'])
+        self.assertEqual(raw_sag_gov[0], 'Yoshinori Yamaguchi')
+
+    def test_nagasaki(self):
+        self.assertEqual(raw_nag_pop, ['1,328,478'])
+        self.assertEqual(raw_nag_den, ['320/km', '2', ' (830/sq\xa0mi)'])
+        self.assertEqual(raw_nag_gov[0], 'Hōdō Nakamura')
+
+    def test_kumamoto(self):
+        self.assertEqual(raw_ku_pop, ['1,748,134'])
+        self.assertEqual(raw_ku_den, ['240/km', '2', ' (610/sq\xa0mi)'])
+        self.assertEqual(raw_ku_gov[0], 'Ikuo Kabashima')
+
+    def test_oita(self):
+        self.assertEqual(raw_oi_pop, ['1,136,245'])
+        self.assertEqual(raw_oi_den, ['180/km', '2', ' (460/sq\xa0mi)'])
+        self.assertEqual(raw_oi_gov[0], 'Katsusada Hirose')
+
+    def test_miyazaki(self):
+        self.assertEqual(raw_miya_pop, ['1,073,054'])
+        self.assertEqual(raw_miya_den, ['140/km', '2', ' (360/sq\xa0mi)'])
+        self.assertEqual(raw_miya_gov[0], 'Shunji Kōno')
+
+    def test_kagoshima(self):
+        self.assertEqual(raw_kago_pop, ['1,599,779'])
+        self.assertEqual(raw_kago_den, ['170/km', '2', ' (450/sq\xa0mi)'])
+        self.assertEqual(raw_kago_gov[0], 'Satoshi Mitazono')
+
+    def test_okinawa(self):
+        self.assertEqual(raw_oki_pop, ['1,457,162'])
+        self.assertEqual(raw_oki_den, ['640/km', '2', ' (1,700/sq\xa0mi)'])
+        self.assertEqual(raw_oki_gov[0], 'Denny Tamaki')
+
 
 if __name__ == '__main__':
     unittest.main()
