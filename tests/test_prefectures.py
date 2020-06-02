@@ -78,11 +78,6 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_chi_den, ['1,200/km', '2', ' (3,200/sq\xa0mi)'])
         self.assertEqual(raw_chi_gov, ['Kensaku Morita'])
 
-    def test_chiba(self):
-        self.assertEqual(raw_chi_pop, ['6,278,060'])
-        self.assertEqual(raw_chi_den, ['1,200/km', '2', ' (3,200/sq\xa0mi)'])
-        self.assertEqual(raw_chi_gov, ['Kensaku Morita'])
-
     def test_tokyo(self):
         self.assertEqual(raw_tok_pop, ['13,929,280'])
         self.assertEqual(raw_tok_den, ['6,349/km', '2', ' (16,440/sq\xa0mi)'])

@@ -42,7 +42,7 @@ hokkaido = {
     "economy": ['Light industry', 'Agriculture', 'Aquaculture', 'Forestry', 'Coal mining'],
     "name-kanji": "北海道",
     "capital-kanji": "札幌市",
-    "iso-code": "JP-01",
+    "iso-code": 1,
     "area-code": "011–016"
 }
 
@@ -62,7 +62,7 @@ aomori = {
     "economy": ['Agriculture', 'Fishery', 'Forestry'],
     "name-kanji": "青森県",
     "capital-kanji": "青森市",
-    "iso-code": "JP-02",
+    "iso-code": 2,
     "area-code": "017"
 }
 
@@ -82,7 +82,7 @@ iwate = {
     "economy": ['Communications manufacturing', 'Animal husbandry', 'Aquaculture'],
     "name-kanji": "岩手県",
     "capital-kanji": "盛岡市",
-    "iso-code": "JP-03",
+    "iso-code": 3,
     "area-code": "019"
 }
 
@@ -102,7 +102,7 @@ miyagi = {
     "economy": ['Fishery', 'Agriculture', 'Electronics', 'Appliances', 'Food Processing'],
     "name-kanji": "宮城県",
     "capital-kanji": "仙台市",
-    "iso-code": "JP-04",
+    "iso-code": 4,
     "area-code": "022"
 }
 
@@ -122,7 +122,7 @@ akita = {
     "economy": ['Agriculture', 'Fishery', 'Forestry'],
     "name-kanji": "秋田県",
     "capital-kanji": "秋田市",
-    "iso-code": "JP-05",
+    "iso-code": 5,
     "area-code": "018"
 }
 
@@ -142,7 +142,7 @@ yamagata = {
     "economy": ['Fruit growing'],
     "name-kanji": "山形県",
     "capital-kanji": "山形市",
-    "iso-code": "JP-06",
+    "iso-code": 6,
     "area-code": "023"
 }
 
@@ -162,7 +162,7 @@ fukushima = {
     "economy": ['Fishery', 'Agriculture', 'Electric industry', 'Nuclear power'],
     "name-kanji": "福島県",
     "capital-kanji": "福島市",
-    "iso-code": "JP-07",
+    "iso-code": 7,
     "area-code": "024"
 }
 
@@ -182,7 +182,7 @@ ibaraki = {
     "economy": ['Agriculture', 'Nuclear energy', 'Machining industry'],
     "name-kanji": "茨城県",
     "capital-kanji": "水戸市",
-    "iso-code": "JP-08",
+    "iso-code": 8,
     "area-code": "029"
 }
 
@@ -202,7 +202,7 @@ tochigi = {
     "economy": ['Industrial manufacturing', 'Agriculture'],
     "name-kanji": "栃木県",
     "capital-kanji": "宇都宮市",
-    "iso-code": "JP-09",
+    "iso-code": 9,
     "area-code": "028"
 }
 
@@ -222,7 +222,7 @@ gunma = {
     "economy": ['Electrical equipment', 'Transport industry', 'Agriculture', 'Sericulture'],
     "name-kanji": "群馬県",
     "capital-kanji": "前橋市",
-    "iso-code": "JP-10",
+    "iso-code": 10,
     "area-code": "027"
 }
 
@@ -242,7 +242,7 @@ saitama = {
     "economy": ['Car industry', 'Agriculture'],
     "name-kanji": "埼玉県",
     "capital-kanji": "さいたま市",
-    "iso-code": "JP-11",
+    "iso-code": 11,
     "area-code": "048"
 }
 
@@ -262,7 +262,7 @@ chiba = {
     "economy": ['Brewing industry', 'Chemical industry', 'Machine industry', 'Agriculture', 'Oil', 'Steel'],
     "name-kanji": "千葉県",
     "capital-kanji": "千葉市",
-    "iso-code": "JP-12",
+    "iso-code": 12,
     "area-code": "043"
 }
 
@@ -282,7 +282,7 @@ tokyo = {
     "economy": ['Finance', 'Light industry'],
     "name-kanji": "東京都",
     "capital-kanji": "新宿区",
-    "iso-code": "JP-13",
+    "iso-code": 13,
     "area-code": "03x042"
 }
 
@@ -302,7 +302,7 @@ kanagawa = {
     "economy": ['Chemistry', 'Metallurgical industry', 'Transport industry', 'Electrical industry', 'Food industry'],
     "name-kanji": "神奈川県",
     "capital-kanji": "横浜市",
-    "iso-code": "JP-14",
+    "iso-code": 14,
     "area-code": "045"
 }
 
@@ -322,7 +322,7 @@ niigata = {
     "economy": ['Agriculture', 'Forestry', 'Fishery', 'Mining', 'Manufacturing'],
     "name-kanji": "新潟県",
     "capital-kanji": "新潟市",
-    "iso-code": "JP-15",
+    "iso-code": 15,
     "area-code": "25",
 }
 
@@ -342,7 +342,7 @@ toyama = {
     "economy": ['Agriculture', 'Manufacturing', 'Energy'],
     "name-kanji": "富山県",
     "capital-kanji": "富山市",
-    "iso-code": "JP-16",
+    "iso-code": 16,
     "area-code": "076"
 }
 
@@ -362,7 +362,7 @@ ishikawa = {
     "economy": ['Textile industry', 'Artificial fabrics', 'Machine industry'],
     "name-kanji": "石川県",
     "capital-kanji": "金沢市",
-    "iso-code": "JP-17",
+    "iso-code": 17,
     "area-code": "076"
 }
 
@@ -382,7 +382,7 @@ fukui = {
     "economy": ['Nuclear power', 'Glasses production '],
     "name-kanji": "福井県",
     "capital-kanji": "福井市",
-    "iso-code": "JP-18",
+    "iso-code": 18,
     "area-code": "077"
 }
 
@@ -402,7 +402,7 @@ yamanashi = {
     "economy": ['Jewerly', 'Robotics', 'Wine production', 'Mineral water', 'Fruit growing'],
     "name-kanji": "山梨県",
     "capital-kanji": "甲府市",
-    "iso-code": "JP-19",
+    "iso-code": 19,
     "area-code": "055"
 }
 
@@ -422,7 +422,7 @@ nagano = {
     "economy": ['Electronics', 'Information technology', 'Precision machinery', 'Agriculture', 'Tourism'],
     "name-kanji": "長野県",
     "capital-kanji": "長野市",
-    "iso-code": "JP-20",
+    "iso-code": 20,
     "area-code": "026"
 }
 
@@ -442,7 +442,7 @@ gifu = {
     "economy": ['Fishery', 'Heavy industry', 'Science', 'Paper', 'Tourism'],
     "name-kanji": "岐阜県",
     "capital-kanji": "岐阜市",
-    "iso-code": "JP-21",
+    "iso-code": 21,
     "area-code": "058"
 }
 
@@ -462,7 +462,7 @@ shizuoka = {
     "economy": ['Agriculture', 'Forestry', 'Fishery', 'Tourism'],
     "name-kanji": "静岡県",
     "capital-kanji": "静岡市",
-    "iso-code": "JP-22",
+    "iso-code": 22,
     "area-code": "054"
 }
 
@@ -482,7 +482,7 @@ aichi = {
     "economy": ['Heavy industry', 'Electronics', 'Transport industry'],
     "name-kanji": "愛知県",
     "capital-kanji": "名古屋市",
-    "iso-code": "JP-23",
+    "iso-code": 23,
     "area-code": "052"
 }
 
@@ -502,7 +502,7 @@ mie = {
     "economy": ['Handicraft', 'Forestry', 'Fishery', 'Agriculture', 'Manufacturing'],
     "name-kanji": "三重県",
     "capital-kanji": "津市",
-    "iso-code": "JP-24",
+    "iso-code": 24,
     "area-code": "059"
 }
 
@@ -522,7 +522,7 @@ shiga = {
     "economy": ['Agriculture', 'Electronics', 'Manufacturing', 'Textile industry', 'Fishery'],
     "name-kanji": "滋賀県",
     "capital-kanji": "大津市",
-    "iso-code": "JP-25",
+    "iso-code": 25,
     "area-code": "077"
 }
 
@@ -542,7 +542,7 @@ kyoto = {
     "economy": ['Agriculture', 'Tourism', 'Forestry', 'Farming', 'Manufacturing'],
     "name-kanji": "京都府",
     "capital-kanji": "京都市",
-    "iso-code": "JP-26",
+    "iso-code": 26,
     "area-code": "074"
 }
 
@@ -562,7 +562,7 @@ osaka = {
     "economy": ['Commercial sales', 'Electronics', 'Chemistry', 'Pharmaceutical', 'Heavy industry'],
     "name-kanji": "大阪府",
     "capital-kanji": "大阪市",
-    "iso-code": "JP-27",
+    "iso-code": 27,
     "area-code": "06x"
 }
 
@@ -582,7 +582,7 @@ hyogo = {
     "economy": ['Agriculture', 'Forestry', 'Fishery', 'Heavy & Metal industry', 'Medical industry', 'IT industry', 'Sea ports'],
     "name-kanji": "兵庫県",
     "capital-kanji": "神戸市",
-    "iso-code": "JP-28",
+    "iso-code": 28,
     "area-code": "073"
 }
 
@@ -602,8 +602,8 @@ nara = {
     "economy": ['Agriculture', 'Tourism', 'Archeology', 'Traditional instruments', 'Aquaculture'],
     "name-kanji": "奈良県",
     "capital-kanji": "奈良市",
-    "iso-code": "JP-29",
-    "area-code": "074"
+    "iso-code": 29,
+    "area-code": "0x74"
 }
 
 wakayama = {
@@ -622,7 +622,7 @@ wakayama = {
     "economy": ['Agriculture', 'Tourism', 'Farming'],
     "name-kanji": "和歌山県",
     "capital-kanji": "和歌山市",
-    "iso-code": "JP-30",
+    "iso-code": 30,
     "area-code": "075"
 }
 
@@ -642,7 +642,7 @@ tottori = {
     "economy": ['Agriculture', 'Farming', 'Fishing', 'Seafood'],
     "name-kanji": "鳥取県",
     "capital-kanji": "鳥取市",
-    "iso-code": "JP-31",
+    "iso-code": 31,
     "area-code": "085"
 }
 
@@ -662,7 +662,7 @@ shimane = {
     "economy": ['Retail industry', 'Manufacturing industry', 'Finance'],
     "name-kanji": "島根県",
     "capital-kanji": "松江市",
-    "iso-code": "JP-32",
+    "iso-code": 32,
     "area-code": "085"
 }
 
@@ -682,7 +682,7 @@ okayama = {
     "economy": ['Tourism', 'Automotive manufacturing', 'Agricultural machinery', 'Shipbuilding'],
     "name-kanji": "岡山県",
     "capital-kanji": "岡山市",
-    "iso-code": "JP-33",
+    "iso-code": 33,
     "area-code": "086"
 }
 
@@ -702,7 +702,7 @@ hiroshima = {
     "economy": ['Tourism', 'Automobiles', 'Manufacturing'],
     "name-kanji": "広島県",
     "capital-kanji": "広島市",
-    "iso-code": "JP-34",
+    "iso-code": 34,
     "area-code": "082"
 }
 
@@ -722,7 +722,7 @@ yamaguchi = {
     "economy": ['Machine building', 'Metallurgy', 'Textile', 'Chemical products'],
     "name-kanji": "山口県",
     "capital-kanji": "山口市",
-    "iso-code": "JP-35",
+    "iso-code": 35,
     "area-code": "083"
 }
 
@@ -742,7 +742,7 @@ tokushima = {
     "economy": ['Agriculture', 'Forestry', 'Fishery'],
     "name-kanji": "徳島県",
     "capital-kanji": "徳島市",
-    "iso-code": "JP-36",
+    "iso-code": 36,
     "area-code": "088"
 }
 
@@ -762,7 +762,7 @@ kagawa = {
     "economy": ['Agriculture', 'Forestry', 'Fishery', 'Manufacturing'],
     "name-kanji": "香川県",
     "capital-kanji": "高松市",
-    "iso-code": "JP-37",
+    "iso-code": 37,
     "area-code": "087"
 }
 
@@ -782,7 +782,7 @@ ehime = {
     "economy": ['Agriculture', 'Fishery', 'Ship building', 'Chemical industry', 'Electric power'],
     "name-kanji": "愛媛県",
     "capital-kanji": "松山市",
-    "iso-code": "JP-38",
+    "iso-code": 38,
     "area-code": "089"
 }
 
@@ -802,7 +802,7 @@ kochi = {
     "economy": ['Oil refining', 'Spices and seafood', 'Ship building', 'Chemical industry', 'Retail', 'Electronics hardware'],
     "name-kanji": "高知県",
     "capital-kanji": "高知市",
-    "iso-code": "JP-39",
+    "iso-code": 39,
     "area-code": "088"
 }
 
@@ -822,7 +822,7 @@ fukuoka = {
     "economy": ['Automobiles', 'Electronics', 'Steel'],
     "name-kanji": "福岡県",
     "capital-kanji": "福岡市",
-    "iso-code": "JP-40",
+    "iso-code": 40,
     "area-code": "082"
 }
 
@@ -842,7 +842,7 @@ saga = {
     "economy": ['Agriculture', 'Fishery', 'Forestry'],
     "name-kanji": "佐賀県",
     "capital-kanji": "佐賀市",
-    "iso-code": "JP-41",
+    "iso-code": 41,
     "area-code": "095"
 }
 
@@ -862,7 +862,7 @@ nagasaki = {
     "economy": ['Heavy industry', 'Agriculture'],
     "name-kanji": "長崎県",
     "capital-kanji": "長崎市",
-    "iso-code": "JP-42",
+    "iso-code": 42,
     "area-code": "095"
 }
 
@@ -882,7 +882,7 @@ kumamoto = {
     "economy": ['Tourism', 'Automobiles'],
     "name-kanji": "熊本県",
     "capital-kanji": "熊本市",
-    "iso-code": "JP-43",
+    "iso-code": 43,
     "area-code": "096"
 }
 
@@ -902,7 +902,7 @@ oita = {
     "economy": ['Tourism', 'Agriculture', 'Seafood', 'Forestry'],
     "name-kanji": "大分県",
     "capital-kanji": "大分市",
-    "iso-code": "JP-44",
+    "iso-code": 44,
     "area-code": "097"
 }
 
@@ -922,7 +922,7 @@ miyazaki = {
     "economy": ['Forestry', 'Agriculture', 'Fishery', 'Forestry', 'Textile', 'Electronics'],
     "name-kanji": "宮崎県",
     "capital-kanji": "宮崎市",
-    "iso-code": "JP-45",
+    "iso-code": 45,
     "area-code": "098"
 }
 
@@ -942,7 +942,7 @@ kagoshima = {
     "economy": ['Agriculture', 'Ceramic industry', 'Electronics'],
     "name-kanji": "鹿児島県",
     "capital-kanji": "鹿児島市",
-    "iso-code": "JP-46",
+    "iso-code": 46,
     "area-code": "099"
 }
 
@@ -962,6 +962,12 @@ okinawa = {
     "economy": ['Military', 'Tourism', 'Agriculture', 'Fishery', 'Retail', 'Civil engineering', 'Petroleum'],
     "name-kanji": "沖縄県",
     "capital-kanji": "那覇市",
-    "iso-code": "JP-47",
+    "iso-code": 47,
     "area-code": "098"
 }
+
+all_prefectures = [hokkaido, aomori, iwate, miyagi, akita, yamagata, fukushima, ibaraki,
+                   tochigi, gunma, saitama, chiba, tokyo, kanagawa, niigata, toyama, ishikawa,
+                   fukui, yamanashi, nagano, gifu, shizuoka, aichi, mie, shiga, kyoto, osaka,
+                   hyogo, nara, wakayama, tottori, shimane, okayama, hiroshima, yamaguchi, tokushima,
+                   kagawa, ehime, kochi, fukuoka, saga, nagasaki, kumamoto, oita, miyazaki, kagoshima, okinawa]

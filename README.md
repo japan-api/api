@@ -11,10 +11,15 @@ If you have noticed some mistakes or bugs, or maybe you have any suggestions ple
 # Docs 📘
 You can use this API to get detailed information aboout Japan <br>
 Japan API has only GET request method<br>
-Japan API has 49 endpoints (All Prefectures of Japan, + Japan itself + all)<br>
+Japan API has 50 endpoints <br> 
+* All Prefectures of Japan (47)
+* Japan itself 
+* All prefectures (including Japan)
+* Find By ISO code
 
 # List of endpoints 📜
 /api/v1/all <br>
+/api/v1/<int:prefecture_iso> - Find by ISO code, list of codes | link > <a href="https://en.wikipedia.org/wiki/ISO_3166-2:JP">JP ISO codes</a> <br>
 /api/v1/japan <br>
 /api/v1/hokkaido <br>
 /api/v1/aomori <br>

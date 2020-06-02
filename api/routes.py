@@ -251,3 +251,11 @@ def get_all():
                    mie, shiga, kyoto, osaka, hyogo, nara, wakayama, tottori, shimane,
                    okayama, hiroshima, yamaguchi, tokushima, kagawa, ehime, kochi,
                    fukuoka, saga, nagasaki, kumamoto, oita, miyazaki, kagoshima, okinawa)
+
+
+@app.route('/api/v1/<int:prefecture_iso>')
+def get_by_id(prefecture_iso):
+    for prefecture in all_prefectures:
+        if prefecture['iso-code'] == prefecture_iso:
+            return jsonify(prefecture)
+        return 'Specify the ISO code of prefecture you want to find!'
