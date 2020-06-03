@@ -253,9 +253,15 @@ def get_all():
                    fukuoka, saga, nagasaki, kumamoto, oita, miyazaki, kagoshima, okinawa)
 
 
-@app.route('/api/v1/<int:prefecture_iso>')
-def get_by_id(prefecture_iso):
+@app.route('/api/v1/iso/<int:iso>')
+def get_by_iso(iso):
     for prefecture in all_prefectures:
-        if prefecture['iso-code'] == prefecture_iso:
+        if iso == prefecture['iso-code']:
             return jsonify(prefecture)
-        return 'Specify the ISO code of prefecture you want to find!'
+
+
+@app.route('/')
+@app.route('/api')
+@app.route('/api/v1')
+def show_docs():
+    return '<a href="https://github.com/irevenko/japan-api">API Documentation</a>'
