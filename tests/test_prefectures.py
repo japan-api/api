@@ -17,6 +17,8 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(gdp_ppp, '$5.888 trillion')
         self.assertEqual(gdp_nom_per, '$43,043')
         self.assertEqual(gdp_ppp_per, '$46,827')
+        self.assertEqual(japan_gini, '33.9 - medium')
+        self.assertEqual(japan_hdi, '0.915 - very high')
 
     def test_hokkaido(self):
         self.assertEqual(raw_hok_pop, ['5,281,297'])

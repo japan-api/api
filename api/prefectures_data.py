@@ -13,6 +13,10 @@ gdp_nom = japan_soup.find_all('td')[27].find_all(text=True, recursive=True)
 gdp_nom_per = japan_soup.find_all('td')[28].find_all(text=True, recursive=True)
 japan_emperor = japan_soup.find_all('td')[8].find_all(text=True, recursive=True)
 japan_minister = japan_soup.find_all('td')[9].find_all(text=True, recursive=True)
+raw_gini = japan_soup.find_all('td')[29].find_all(text=True, recursive=True)
+raw_hdi = japan_soup.find_all('td')[30].find_all(text=True, recursive=True)
+japan_gini = f"{raw_gini[0]} - {raw_gini[2]}"
+japan_hdi = f"{raw_hdi[0].strip()} - {raw_hdi[2]}"
 japan_emperor = f"{japan_emperor[0]}"
 japan_minister = f"{japan_minister[0]}"
 gdp_nom = f"{gdp_nom[0].strip()}"

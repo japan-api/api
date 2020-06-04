@@ -1,13 +1,13 @@
 # Japan API 🎌
-LINK FOR API - http://japanapi.pythonanywhere.com/api/v1/  (CURRENTLY TESTING PREFECTURES DATA)
+LINK FOR API - http://japanapi.pythonanywhere.com/api/v1/  (CURRENTLY TESTING PREFECTURES DATA) <br>
 A Complete REST API about Prefectures of Japan using Python 3.8.3 and Flask<br>
-<b>WIP!</b> (Testing and deploying, fixing bugs, and typos, adding new fields)<br> Currently there are <b>47</b> (All) prefectures and <b>17</b> fields (May add more)<br>
+<b>WIP!</b> (Testing and deploying, fixing bugs, and typos, adding new fields)<br> Currently there are <b>47</b> (All) prefectures and <b>18</b> fields (May add more)<br>
 Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefectures_of_Japan">Wikipedia</a>,
 <a href="https://www.tofugu.com/japan/japanese-food-by-prefecture/">Food data</a>, <a href="http://www.fukushima.climatemps.com">Climate data</a><br>
 If you have noticed some mistakes or bugs, or maybe you have any suggestions please create an issue.
 
 # Preview 🔍
-<img src="https://i.imgur.com/QUIVuo5.jpg" width="400">
+<img src="https://i.imgur.com/kDDpBPA.jpg" width="420">
 
 # Docs 📘
 You can use this API to get detailed information aboout Japan <br>
@@ -21,7 +21,7 @@ Japan API has 50 endpoints <br>
 # List of endpoints 📜
 /api/v1/all <br>
 /api/v1/iso/<int:prefecture_iso> - Find by ISO code, list of codes | link > <a href="https://en.wikipedia.org/wiki/ISO_3166-2:JP">JP ISO codes</a> <br>
-/api/v1/japan <br>
+/api/v1/japan  <br>
 /api/v1/hokkaido <br>
 /api/v1/aomori <br>
 /api/v1/iwate <br>
@@ -89,8 +89,9 @@ coming soon...
 * JSON
 
 # ToDo 
-* Add new fields 
+* Add area, population rank
 * Add setup.py
+* Manual Testing
 
 # License 📑 
 (c) 2020 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)
