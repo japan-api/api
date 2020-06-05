@@ -7,7 +7,7 @@ Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefec
 If you have noticed some mistakes or bugs, or maybe you have any suggestions please create an issue.
 
 # Preview 🔍
-<img src="https://i.imgur.com/kDDpBPA.jpg" width="420">
+<img src="https://i.imgur.com/mCct5TL.jpg" width="430">
 
 # Docs 📘
 You can use this API to get detailed information aboout Japan <br>
@@ -18,6 +18,7 @@ Japan API has 50 endpoints <br>
 * All prefectures (including Japan)
 * Find By ISO code
 
+```area-rank, population-rank``` - stands for local Japanese rank between all prefectures (47)
 # List of endpoints 📜
 /api/v1/all <br>
 /api/v1/iso/<int:prefecture_iso> - Find by ISO code, list of codes | link > <a href="https://en.wikipedia.org/wiki/ISO_3166-2:JP">JP ISO codes</a> <br>
