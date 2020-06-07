@@ -381,6 +381,10 @@ mie_soup = BeautifulSoup(mie_page.text, 'html.parser')
 raw_mie_pop = mie_soup.find_all('td')[14].find_all(text=True, recursive=True)
 raw_mie_den = mie_soup.find_all('td')[16].find_all(text=True, recursive=True)
 raw_mie_gov = mie_soup.find_all('td')[11].find_all(text=True, recursive=True)
+raw_mie_ar = mie_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_mie_pr = mie_soup.find_all('td')[15].find_all(text=True, recursive=True)
+mie_area_rank = int(raw_mie_ar[0].replace('th', ''))
+mie_pop_rank = int(raw_mie_pr[0].replace('rd', '')) 
 mie_governor = f"{raw_mie_gov[0]}"
 mie_population = f"{raw_mie_pop[0]}"
 mie_density = f"{raw_mie_den[0]}{raw_mie_den[1]}"
@@ -392,6 +396,10 @@ shiga_soup = BeautifulSoup(shiga_page.text, 'html.parser')
 raw_shig_pop = shiga_soup.find_all('td')[13].find_all(text=True, recursive=True)
 raw_shig_den = shiga_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_shig_gov = shiga_soup.find_all('td')[10].find_all(text=True, recursive=True)
+raw_shig_ar = shiga_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_shig_pr = shiga_soup.find_all('td')[14].find_all(text=True, recursive=True)
+shiga_area_rank = int(raw_shig_ar[0].replace('th', ''))
+shiga_pop_rank = int(raw_shig_pr[0].replace('th', '')) 
 shiga_governor = f"{raw_shig_gov[0]}"
 shiga_population = f"{raw_shig_pop[0]}"
 shiga_density = f"{raw_shig_den[0]}{raw_shig_den[1]}"
@@ -403,6 +411,10 @@ kyoto_soup = BeautifulSoup(kyoto_page.text, 'html.parser')
 raw_ky_pop = kyoto_soup.find_all('td')[14].find_all(text=True, recursive=True)
 raw_ky_den = kyoto_soup.find_all('td')[16].find_all(text=True, recursive=True)
 raw_ky_gov = kyoto_soup.find_all('td')[11].find_all(text=True, recursive=True)
+raw_ky_ar = kyoto_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_ky_pr = kyoto_soup.find_all('td')[15].find_all(text=True, recursive=True)
+kyoto_area_rank = int(raw_ky_ar[0].replace('st', ''))
+kyoto_pop_rank = int(raw_ky_pr[0].replace('th', '')) 
 kyoto_governor = f"{raw_ky_gov[0]}"
 kyoto_population = f"{raw_ky_pop[0]}"
 kyoto_density = f"{raw_ky_den[0]}{raw_ky_den[1]}"
@@ -414,6 +426,10 @@ osaka_soup = BeautifulSoup(osaka_page.text, 'html.parser')
 raw_os_pop = osaka_soup.find_all('td')[14].find_all(text=True, recursive=True)
 raw_os_den = osaka_soup.find_all('td')[16].find_all(text=True, recursive=True)
 raw_os_gov = osaka_soup.find_all('td')[11].find_all(text=True, recursive=True)
+raw_os_ar = osaka_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_os_pr = osaka_soup.find_all('td')[15].find_all(text=True, recursive=True)
+osaka_area_rank = int(raw_os_ar[0].replace('th', ''))
+osaka_pop_rank = int(raw_os_pr[0].replace('rd', '')) 
 osaka_governor = f"{raw_os_gov[0]}"
 osaka_population = f"{raw_os_pop[0]}"
 osaka_density = f"{raw_os_den[0]}{raw_os_den[1]}"
@@ -425,6 +441,10 @@ hyogo_soup = BeautifulSoup(hyogo_page.text, 'html.parser')
 raw_hy_pop = hyogo_soup.find_all('td')[13].find_all(text=True, recursive=True)
 raw_hy_den = hyogo_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_hy_gov = hyogo_soup.find_all('td')[10].find_all(text=True, recursive=True)
+raw_hy_ar = hyogo_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_hy_pr = hyogo_soup.find_all('td')[14].find_all(text=True, recursive=True)
+hyogo_area_rank = int(raw_hy_ar[0].replace('th', ''))
+hyogo_pop_rank = int(raw_hy_pr[0].replace('th', '')) 
 hyogo_governor = f"{raw_hy_gov[0]}"
 hyogo_population = f"{raw_hy_pop[0]}"
 hyogo_density = f"{raw_hy_den[0]}{raw_hy_den[1]}"
@@ -436,6 +456,10 @@ nara_soup = BeautifulSoup(nara_page.text, 'html.parser')
 raw_nar_pop = nara_soup.find_all('td')[13].find_all(text=True, recursive=True)
 raw_nar_den = nara_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_nar_gov = nara_soup.find_all('td')[10].find_all(text=True, recursive=True)
+raw_nar_ar = nara_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_nar_pr = nara_soup.find_all('td')[14].find_all(text=True, recursive=True)
+nara_area_rank = int(raw_nar_ar[0].replace('th', ''))
+nara_pop_rank = int(raw_nar_pr[0].replace('th', '')) 
 nara_governor = f"{raw_nar_gov[0]}"
 nara_population = f"{raw_nar_pop[0]}"
 nara_density = f"{raw_nar_den[0]}{raw_nar_den[1]}"
@@ -447,6 +471,10 @@ wakayama_soup = BeautifulSoup(wakayama_page.text, 'html.parser')
 raw_wa_pop = wakayama_soup.find_all('td')[13].find_all(text=True, recursive=True)
 raw_wa_den = wakayama_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_wa_gov = wakayama_soup.find_all('td')[10].find_all(text=True, recursive=True)
+raw_wa_ar = wakayama_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_wa_pr = wakayama_soup.find_all('td')[14].find_all(text=True, recursive=True)
+wakayama_area_rank = int(raw_wa_ar[0].replace('th', ''))
+wakayama_pop_rank = int(raw_wa_pr[0].replace('th', '')) 
 wakayama_governor = f"{raw_wa_gov[0]}"
 wakayama_population = f"{raw_wa_pop[0]}"
 wakayama_density = f"{raw_wa_den[0]}{raw_wa_den[1]}"
@@ -458,6 +486,10 @@ tottori_soup = BeautifulSoup(tottori_page.text, 'html.parser')
 raw_tot_pop = tottori_soup.find_all('td')[14].find_all(text=True, recursive=True)
 raw_tot_den = tottori_soup.find_all('td')[16].find_all(text=True, recursive=True)
 raw_tot_gov = tottori_soup.find_all('td')[11].find_all(text=True, recursive=True)
+raw_tot_ar = tottori_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_tot_pr = tottori_soup.find_all('td')[15].find_all(text=True, recursive=True)
+tottori_area_rank = int(raw_tot_ar[0].replace('st', ''))
+tottori_pop_rank = int(raw_tot_pr[0].replace('th', '')) 
 tottori_governor = f"{raw_tot_gov[0]}"
 tottori_population = f"{raw_tot_pop[0]}"
 tottori_density = f"{raw_tot_den[0]}{raw_tot_den[1]}"
@@ -469,6 +501,10 @@ shimane_soup = BeautifulSoup(shimane_page.text, 'html.parser')
 raw_shim_pop = shimane_soup.find_all('td')[13].find_all(text=True, recursive=True)
 raw_shim_den = shimane_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_shim_gov = shimane_soup.find_all('td')[10].find_all(text=True, recursive=True)
+raw_shim_ar = shimane_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_shim_pr = shimane_soup.find_all('td')[14].find_all(text=True, recursive=True)
+shimane_area_rank = int(raw_shim_ar[0].replace('th', ''))
+shimane_pop_rank = int(raw_shim_pr[0].replace('th', '')) 
 shimane_governor = f"{raw_shim_gov[0]}"
 shimane_population = f"{raw_shim_pop[0]}"
 shimane_density = f"{raw_shim_den[0]}{raw_shim_den[1]}"
@@ -480,6 +516,10 @@ okayama_soup = BeautifulSoup(okayama_page.text, 'html.parser')
 raw_ok_pop = okayama_soup.find_all('td')[13].find_all(text=True, recursive=True)
 raw_ok_den = okayama_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_ok_gov = okayama_soup.find_all('td')[10].find_all(text=True, recursive=True)
+raw_ok_ar = okayama_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_ok_pr = okayama_soup.find_all('td')[14].find_all(text=True, recursive=True)
+okayama_area_rank = int(raw_ok_ar[0].replace('th', ''))
+okayama_pop_rank = int(raw_ok_pr[0].replace('st', '')) 
 okayama_governor = f"{raw_ok_gov[0]}"
 okayama_population = f"{raw_ok_pop[0]}"
 okayama_density = f"{raw_ok_den[0]}{raw_ok_den[1]}"
@@ -491,6 +531,10 @@ hiroshima_soup = BeautifulSoup(hiroshima_page.text, 'html.parser')
 raw_hi_pop = hiroshima_soup.find_all('td')[13].find_all(text=True, recursive=True)
 raw_hi_den = hiroshima_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_hi_gov = hiroshima_soup.find_all('td')[10].find_all(text=True, recursive=True)
+raw_hi_ar = hiroshima_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_hi_pr = hiroshima_soup.find_all('td')[14].find_all(text=True, recursive=True)
+hiroshima_area_rank = int(raw_hi_ar[0].replace('th', ''))
+hiroshima_pop_rank = int(raw_hi_pr[0].replace('th', '')) 
 hiroshima_governor = f"{raw_hi_gov[0]}"
 hiroshima_population = f"{raw_hi_pop[0]}"
 hiroshima_density = f"{raw_hi_den[0]}{raw_hi_den[1]}"
@@ -502,6 +546,10 @@ yamaguchi_soup = BeautifulSoup(yamaguchi_page.text, 'html.parser')
 raw_yama_pop = yamaguchi_soup.find_all('td')[14].find_all(text=True, recursive=True)
 raw_yama_den = yamaguchi_soup.find_all('td')[16].find_all(text=True, recursive=True)
 raw_yama_gov = yamaguchi_soup.find_all('td')[11].find_all(text=True, recursive=True)
+raw_yama_ar = yamaguchi_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_yama_pr = yamaguchi_soup.find_all('td')[15].find_all(text=True, recursive=True)
+yamaguchi_area_rank = int(raw_yama_ar[0].replace('nd', ''))
+yamaguchi_pop_rank = int(raw_yama_pr[0].replace('th', '')) 
 yamaguchi_governor = f"{raw_mi_gov[0]}"
 yamaguchi_population = f"{raw_yama_pop[0]}"
 yamaguchi_density = f"{raw_yama_den[0]}{raw_yama_den[1]}"
@@ -513,6 +561,10 @@ tokushima_soup = BeautifulSoup(tokushima_page.text, 'html.parser')
 raw_toku_pop = tokushima_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_toku_den = tokushima_soup.find_all('td')[17].find_all(text=True, recursive=True)
 raw_toku_gov = tokushima_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_toku_ar = tokushima_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_toku_pr = tokushima_soup.find_all('td')[16].find_all(text=True, recursive=True)
+tokushima_area_rank = int(raw_toku_ar[0].replace('th', ''))
+tokushima_pop_rank = int(raw_toku_pr[0].replace('th', '')) 
 tokushima_governor = f"{raw_toku_gov[0]}"
 tokushima_population = f"{raw_toku_pop[0]}"
 tokushima_density = f"{raw_toku_den[0]}{raw_toku_den[1]}"
@@ -524,6 +576,10 @@ kagawa_soup = BeautifulSoup(kagawa_page.text, 'html.parser')
 raw_kag_pop = kagawa_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_kag_den = kagawa_soup.find_all('td')[17].find_all(text=True, recursive=True)
 raw_kag_gov = kagawa_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_kag_ar = kagawa_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_kag_pr = kagawa_soup.find_all('td')[16].find_all(text=True, recursive=True)
+kagawa_area_rank = int(raw_kag_ar[0].replace('th', ''))
+kagawa_pop_rank = int(raw_kag_pr[0].replace('th', '')) 
 kagawa_governor = f"{raw_kag_gov[0]}"
 kagawa_population = f"{raw_kag_pop[0]}"
 kagawa_density = f"{raw_kag_den[0]}{raw_kag_den[1]}"
@@ -535,6 +591,10 @@ ehime_soup = BeautifulSoup(ehime_page.text, 'html.parser')
 raw_eh_pop = ehime_soup.find_all('td')[15].find_all(text=True, recursive=True)
 raw_eh_den = ehime_soup.find_all('td')[17].find_all(text=True, recursive=True)
 raw_eh_gov = ehime_soup.find_all('td')[12].find_all(text=True, recursive=True)
+raw_eh_ar = ehime_soup.find_all('td')[14].find_all(text=True, recursive=True)
+raw_eh_pr = ehime_soup.find_all('td')[16].find_all(text=True, recursive=True)
+ehime_area_rank = int(raw_eh_ar[0].replace('th', ''))
+ehime_pop_rank = int(raw_eh_pr[0].replace('th', '')) 
 ehime_governor = f"{raw_eh_gov[0]}"
 ehime_population = f"{raw_eh_pop[0]}"
 ehime_density = f"{raw_eh_den[0]}{raw_eh_den[1]}"
@@ -546,6 +606,10 @@ kochi_soup = BeautifulSoup(kochi_page.text, 'html.parser')
 raw_ko_pop = kochi_soup.find_all('td')[16].find_all(text=True, recursive=True)
 raw_ko_den = kochi_soup.find_all('td')[18].find_all(text=True, recursive=True)
 raw_ko_gov = kochi_soup.find_all('td')[13].find_all(text=True, recursive=True)
+raw_ko_ar = kochi_soup.find_all('td')[15].find_all(text=True, recursive=True)
+raw_ko_pr = kochi_soup.find_all('td')[17].find_all(text=True, recursive=True)
+kochi_area_rank = int(raw_ko_ar[0].replace('th', ''))
+kochi_pop_rank = int(raw_ko_pr[0].replace('th', '')) 
 kochi_governor = f"{raw_ko_gov[0]}"
 kochi_population = f"{raw_ko_pop[0]}"
 kochi_density = f"{raw_ko_den[0]}{raw_ko_den[1]}"
