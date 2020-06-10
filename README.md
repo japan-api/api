@@ -12,16 +12,20 @@ If you have noticed some mistakes or bugs, or maybe you have any suggestions ple
 # Docs 📘
 You can use this API to get detailed information aboout Japan <br>
 Japan API has only GET request method<br>
-Japan API has 50 endpoints <br> 
+Japan API has 52 endpoints <br> 
 * All Prefectures of Japan (47)
 * Japan itself 
 * All prefectures (including Japan)
-* Find By ISO code
+* Find By ISO code, By population and density rank (Among all prefectures)
 
-```area-rank, population-rank``` - stands for local Japanese rank between all prefectures (47)
+```area-rank, population-rank``` - stands for local Japanese rank between all prefectures (47) <br>
+```area-rank, population-rank, density-rank``` In Japan endpoint means Worldwide rank
+
 # List of endpoints 📜
 /api/v1/all <br>
 /api/v1/iso/<int:prefecture_iso> - Find by ISO code, list of codes | link > <a href="https://en.wikipedia.org/wiki/ISO_3166-2:JP">JP ISO codes</a> <br>
+/api/v1/population_rank/<int:population_rank> - Find by population rank (Among all prefectures)<br>
+/api/v1/area_rank/<int:area_rank> - Find by area rank (Among all prefectures)<br>
 /api/v1/japan  <br>
 /api/v1/hokkaido <br>
 /api/v1/aomori <br>
@@ -90,10 +94,7 @@ coming soon...
 * JSON
 
 # ToDo 
-* Add all prefectures area and population ranks
-* Write tests for population-rank
-* Add Find by area, population rank
-* Update Japan endpoint with additional info
+* Write more tests
 * Add setup.py
 * Manual Testing
 
