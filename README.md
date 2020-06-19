@@ -94,7 +94,6 @@ coming soon...
 * JSON
 
 # ToDo 
-* Write more tests
 * Add setup.py
 * Manual Testing
 

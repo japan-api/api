@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 # nom - nominal ppp - purchasing power parity,
 # den - density, pop - population, gov - governor
-#ar - area rank, pr - population rank, dr- density rank
+# ar - area rank, pr - population rank, dr- density rank
 
 japan_page = requests.get('https://en.wikipedia.org/wiki/Japan')
 japan_soup = BeautifulSoup(japan_page.text, 'html.parser')
@@ -17,7 +17,7 @@ japan_minister = japan_soup.find_all('td')[9].find_all(text=True, recursive=True
 raw_gini = japan_soup.find_all('td')[29].find_all(text=True, recursive=True)
 raw_hdi = japan_soup.find_all('td')[30].find_all(text=True, recursive=True)
 raw_ja_ar = japan_soup.find_all('td')[19].find_all(text=True, recursive=True)
-raw_ja_pr = japan_soup.find_all('td')[22].find_all(text=True, recursive=True)
+raw_ja_pr = japan_soup.find_all('td')[20].find_all(text=True, recursive=True)
 japan_area_rank = f"{raw_ja_ar[-2]}"
 japan_population_rank = f"{raw_ja_pr[-2]}"
 japan_density_rank = f"{raw_ja_den[-2]}"

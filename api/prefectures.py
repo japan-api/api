@@ -1,4 +1,5 @@
 from prefectures_data import *
+# den - density, pop - population
 
 japan = {
     "name": "Nippon",
@@ -15,7 +16,7 @@ japan = {
     "hdi": f"{japan_hdi}",
     "area-rank": f"{japan_area_rank}",
     "population-rank": f"{japan_population_rank}",
-    "density-rank": f"{japan_density_rank}"
+    "density-rank": f"{japan_density_rank}",
     "driving-side": "left",
     "national-language": "Japanese",
     "area": "377,975 km2",
