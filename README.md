@@ -10,6 +10,7 @@ If you have noticed some mistakes or bugs, or maybe you have any suggestions ple
 <img src="https://i.imgur.com/mCct5TL.jpg" width="430">
 
 # Docs 📘
+Site with docs is here https://github.com/japan-api/docs
 You can use this API to get detailed information aboout Japan <br>
 Japan API has only GET request method<br>
 Japan API has 52 endpoints <br> 
@@ -96,6 +97,7 @@ coming soon...
 # ToDo 
 * Add setup.py
 * Manual Testing
+* Add Usage
 
 # License 📑 
 (c) 2020 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)

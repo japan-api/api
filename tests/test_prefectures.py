@@ -1,3 +1,4 @@
+# coding=utf-8
 import sys
 sys.path.append("../api")
 from prefectures_data import *
@@ -10,7 +11,7 @@ class TestPrefectures(unittest.TestCase):
     def test_japan(self):
         self.assertEqual(japan_emperor, 'Naruhito')
         self.assertEqual(japan_minister, 'Shinzō Abe')
-        self.assertEqual(japan_population, '126,150,000')
+        self.assertEqual(japan_population, '125,930,000')
         self.assertEqual(japan_density, '334/km2')
         self.assertEqual(japan_density_mi, '865.1/sq\xa0mi')
         self.assertEqual(gdp_nom, '$5.413 trillion')
@@ -50,7 +51,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_mi_pop, ['2,305,596'])
         self.assertEqual(raw_mi_den, ['320/km', '2', ' (820/sq\xa0mi)'])
         self.assertEqual(raw_mi_gov, ['Yoshihiro Murai'])
-        self.assertEqual(miyagi_area_rank, 17)
+        self.assertEqual(miyagi_area_rank, 16)
         self.assertEqual(miyagi_pop_rank, 15)
 
     def test_akita(self):
@@ -72,13 +73,13 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_fu_den, ['130/km', '2', ' (350/sq\xa0mi)'])
         self.assertEqual(raw_fu_gov, ['Masao Uchibori'])
         self.assertEqual(fukushima_area_rank, 3)
-        self.assertEqual(fukushima_pop_rank, 21)
+        self.assertEqual(fukushima_pop_rank, 20)
 
     def test_ibaraki(self):
         self.assertEqual(raw_ib_pop, ['2,871,199'])
         self.assertEqual(raw_ib_den, ['470/km', '2', ' (1,200/sq\xa0mi)'])
         self.assertEqual(raw_ib_gov, ['Kazuhiko Ōigawa'])
-        self.assertEqual(ibaraki_area_rank, 23)
+        self.assertEqual(ibaraki_area_rank, 24)
         self.assertEqual(ibaraki_pop_rank, 11)
 
     def test_tochigi(self):
@@ -86,14 +87,14 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_to_den, ['300/km', '2', ' (790/sq\xa0mi)'])
         self.assertEqual(raw_to_gov, ['Tomikazu Fukuda'])
         self.assertEqual(tochigi_area_rank, 20)
-        self.assertEqual(tochigi_pop_rank, 20)
+        self.assertEqual(tochigi_pop_rank, 19)
 
     def test_gunma(self):
         self.assertEqual(raw_gu_pop, ['1,937,626'])
         self.assertEqual(raw_gu_den, ['300/km', '2', ' (790/sq\xa0mi)'])
         self.assertEqual(raw_gu_gov, ['Ichita Yamamoto'])
         self.assertEqual(gunma_area_rank, 21)
-        self.assertEqual(gunma_pop_rank, 19)
+        self.assertEqual(gunma_pop_rank, 18)
 
     def test_saitama(self):
         self.assertEqual(raw_sa_pop, ['7,338,536'])
@@ -106,7 +107,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_chi_pop, ['6,278,060'])
         self.assertEqual(raw_chi_den, ['1,200/km', '2', ' (3,200/sq\xa0mi)'])
         self.assertEqual(raw_chi_gov, ['Kensaku Morita'])
-        self.assertEqual(chiba_area_rank, 27)
+        self.assertEqual(chiba_area_rank, 28)
         self.assertEqual(chiba_pop_rank, 6)
 
     def test_tokyo(self):
@@ -135,7 +136,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_toy_den, ['250/km', '2', ' (640/sq\xa0mi)'])
         self.assertEqual(raw_toy_gov, ['Takakazu Ishii'])
         self.assertEqual(toyama_area_rank, 33)
-        self.assertEqual(toyama_pop_rank, 38)
+        self.assertEqual(toyama_pop_rank, 37)
 
     def test_ishikawa(self):
         self.assertEqual(raw_ish_pop, ['1,140,573'])
@@ -170,7 +171,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_gi_den, ['190/km', '2', ' (490/sq\xa0mi)'])
         self.assertEqual(raw_gi_gov[0], 'Hajime Furuta')
         self.assertEqual(gifu_area_rank, 7)
-        self.assertEqual(gifu_pop_rank, 18)
+        self.assertEqual(gifu_pop_rank, 17)
 
     def test_shizuoka(self):
         self.assertEqual(raw_shi_pop, ['3,637,998'])
@@ -183,7 +184,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_ai_pop, ['7,552,873'])
         self.assertEqual(raw_ai_den, ['1,500/km', '2', ' (3,800/sq\xa0mi)'])
         self.assertEqual(raw_ai_gov[0], 'Hideaki Ōmura')
-        self.assertEqual(aichi_area_rank, 23)
+        self.assertEqual(aichi_area_rank, 27)
         self.assertEqual(aichi_pop_rank, 4)
 
     def test_mie(self):
@@ -191,14 +192,14 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_mie_den, ['310/km', '2', ' (800/sq\xa0mi)'])
         self.assertEqual(raw_mie_gov[0], 'Eikei Suzuki')
         self.assertEqual(mie_area_rank, 25)
-        self.assertEqual(mie_pop_rank, 23)
+        self.assertEqual(mie_pop_rank, 22)
 
     def test_shiga(self):
         self.assertEqual(raw_shig_pop, ['1,412,916'])
         self.assertEqual(raw_shig_den, ['350/km', '2', ' (910/sq\xa0mi)'])
         self.assertEqual(raw_shig_gov[0], 'Taizō Mikazuki')
         self.assertEqual(shiga_area_rank, 38)
-        self.assertEqual(shiga_pop_rank, 26)
+        self.assertEqual(shiga_pop_rank, 28)
 
     def test_kyoto(self):
         self.assertEqual(raw_ky_pop, ['2,610,353'])
@@ -226,7 +227,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_nar_den, ['365.46/km', '2', ' (946.5/sq\xa0mi)'])
         self.assertEqual(raw_nar_gov[0], 'Shōgo Arai')
         self.assertEqual(nara_area_rank, 40)
-        self.assertEqual(nara_pop_rank, 29)
+        self.assertEqual(nara_pop_rank, 30)
 
     def test_wakayama(self):
         self.assertEqual(raw_wa_pop, ['944,320'])
@@ -246,14 +247,14 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_shim_pop, ['689,963'])
         self.assertEqual(raw_shim_den, ['102.85/km', '2', ' (266.4/sq\xa0mi)'])
         self.assertEqual(raw_shim_gov[0], 'Tatsuya Maruyama')
-        self.assertEqual(shimane_area_rank, 18)
+        self.assertEqual(shimane_area_rank, 19)
         self.assertEqual(shimane_pop_rank, 46)
 
     def test_okayama(self):
         self.assertEqual(raw_ok_pop, ['1,906,464'])
         self.assertEqual(raw_ok_den, ['270/km', '2', ' (690/sq\xa0mi)'])
         self.assertEqual(raw_ok_gov[0], 'Ryūta Ibaragi')
-        self.assertEqual(okayama_area_rank, 15)
+        self.assertEqual(okayama_area_rank, 17)
         self.assertEqual(okayama_pop_rank, 21)
 
     def test_hiroshima(self):
@@ -267,8 +268,8 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_yama_pop, ['1,377,631'])
         self.assertEqual(raw_yama_den, ['225.43/km', '2', ' (583.9/sq\xa0mi)'])
         self.assertEqual(raw_yama_gov[0], 'Tsugumasa Muraoka')
-        self.assertEqual(yamaguchi_area_rank, 22)
-        self.assertEqual(yamaguchi_pop_rank, 27)
+        self.assertEqual(yamaguchi_area_rank, 23)
+        self.assertEqual(yamaguchi_pop_rank, 25)
 
     def test_tokushima(self):
         self.assertEqual(raw_toku_pop, ['728,633'])
@@ -289,13 +290,13 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_eh_den, ['240/km', '2', ' (610/sq\xa0mi)'])
         self.assertEqual(raw_eh_gov[0], 'Tokihiro Nakamura')
         self.assertEqual(ehime_area_rank, 26)
-        self.assertEqual(ehime_pop_rank, 27)
+        self.assertEqual(ehime_pop_rank, 26)
 
     def test_kochi(self):
         self.assertEqual(raw_ko_pop, ['757,914'])
         self.assertEqual(raw_ko_den, ['106.68/km', '2', ' (276.3/sq\xa0mi)'])
         self.assertEqual(raw_ko_gov[0], 'Seiji Hamada')
-        self.assertEqual(kochi_area_rank, 14)
+        self.assertEqual(kochi_area_rank, 18)
         self.assertEqual(kochi_pop_rank, 45)
 
     def test_fukuoka(self):
@@ -317,20 +318,20 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_nag_den, ['320/km', '2', ' (830/sq\xa0mi)'])
         self.assertEqual(raw_nag_gov[0], 'Hōdō Nakamura')
         self.assertEqual(nagasaki_area_rank, 37)
-        self.assertEqual(nagasaki_pop_rank, 26)
+        self.assertEqual(nagasaki_pop_rank, 27)
 
     def test_kumamoto(self):
         self.assertEqual(raw_ku_pop, ['1,748,134'])
         self.assertEqual(raw_ku_den, ['240/km', '2', ' (610/sq\xa0mi)'])
         self.assertEqual(raw_ku_gov[0], 'Ikuo Kabashima')
-        self.assertEqual(kumamoto_area_rank, 16)
+        self.assertEqual(kumamoto_area_rank, 15)
         self.assertEqual(kumamoto_pop_rank, 23)
 
     def test_oita(self):
         self.assertEqual(raw_oi_pop, ['1,136,245'])
         self.assertEqual(raw_oi_den, ['180/km', '2', ' (460/sq\xa0mi)'])
         self.assertEqual(raw_oi_gov[0], 'Katsusada Hirose')
-        self.assertEqual(oita_area_rank, 24)
+        self.assertEqual(oita_area_rank, 22)
         self.assertEqual(oita_pop_rank, 33)
 
     def test_miyazaki(self):
@@ -338,7 +339,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_miya_den, ['140/km', '2', ' (360/sq\xa0mi)'])
         self.assertEqual(raw_miya_gov[0], 'Shunji Kōno')
         self.assertEqual(miyazaki_area_rank, 14)
-        self.assertEqual(miyazaki_pop_rank, 37)
+        self.assertEqual(miyazaki_pop_rank, 36)
 
     def test_kagoshima(self):
         self.assertEqual(raw_kago_pop, ['1,599,779'])

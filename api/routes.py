@@ -281,3 +281,16 @@ def get_by_population_rank(population_rank):
 @app.route('/api/v1/')
 def show_docs():
     return '<h1><a href="https://github.com/irevenko/japan-api">API Documentation</a></h1>'
+
+
+@app.route('/api/v1/area_rank/')
+def show_area_rank_message():
+    return '<h1>Specify the area rank number 1-47</h1>'
+
+@app.route('/api/v1/population_rank/')
+def show_population_rank_message():
+    return '<h1>Specify the population rank number 1-47</h1>'
+
+@app.route('/api/v1/iso_code/')
+def show_iso_code_message():
+    return '<h1>Specify the iso code number 1-47</h1>'
