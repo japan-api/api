@@ -19,8 +19,8 @@ Japan API has 52 endpoints <br>
 * All prefectures (including Japan)
 * Find By ISO code, By population and density rank (Among all prefectures)
 
-```area-rank, population-rank``` - stands for local Japanese rank between all prefectures (47) <br>
-```area-rank, population-rank, density-rank``` In Japan endpoint means Worldwide rank
+```area_rank, population_rank``` - stands for local Japanese rank between all prefectures (47) <br>
+```area_rank, population_rank, density-rank``` In Japan endpoint means Worldwide rank
 
 # List of endpoints 📜
 /api/v1/all <br>

@@ -256,21 +256,21 @@ def get_all():
 @app.route('/api/v1/iso_code/<int:iso>')
 def get_by_iso(iso):
     for prefecture in all_prefectures:
-        if iso == prefecture['iso-code']:
+        if iso == prefecture['iso_code']:
             return jsonify(prefecture)
 
 
 @app.route('/api/v1/area_rank/<int:area_rank>')
 def get_by_area_rank(area_rank):
     for prefecture in all_prefectures:
-        if area_rank == prefecture['area-rank']:
+        if area_rank == prefecture['area_rank']:
             return jsonify(prefecture)
 
 
 @app.route('/api/v1/population_rank/<int:population_rank>')
 def get_by_population_rank(population_rank):
     for prefecture in all_prefectures:
-        if population_rank == prefecture['population-rank']:
+        if population_rank == prefecture['population_rank']:
             return jsonify(prefecture)
 
 
@@ -280,7 +280,7 @@ def get_by_population_rank(population_rank):
 @app.route('/api/v1')
 @app.route('/api/v1/')
 def show_docs():
-    return '<h1><a href="https://github.com/irevenko/japan-api">API Documentation</a></h1>'
+    return '<h1><a href="https://github.com/japan-api/docs">API Documentation</a></h1>'
 
 
 @app.route('/api/v1/area_rank/')

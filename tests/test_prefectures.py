@@ -10,14 +10,14 @@ import unittest
 class TestPrefectures(unittest.TestCase):
     def test_japan(self):
         self.assertEqual(japan_emperor, 'Naruhito')
-        self.assertEqual(japan_minister, 'Shinzō Abe')
-        self.assertEqual(japan_population, '125,930,000')
+        self.assertEqual(japan_minister, 'Yoshihide Suga')
+        self.assertEqual(japan_population, '125,960,000')
         self.assertEqual(japan_density, '334/km2')
         self.assertEqual(japan_density_mi, '865.1/sq\xa0mi')
-        self.assertEqual(gdp_nom, '$5.413 trillion')
-        self.assertEqual(gdp_ppp, '$5.888 trillion')
-        self.assertEqual(gdp_nom_per, '$43,043')
-        self.assertEqual(gdp_ppp_per, '$46,827')
+        self.assertEqual(gdp_nom, '$5.080 trillion')
+        self.assertEqual(gdp_ppp, '$5.451 trillion')
+        self.assertEqual(gdp_nom_per, '$40,256')
+        self.assertEqual(gdp_ppp_per, '$43,194')
         self.assertEqual(japan_gini, '33.9 - medium')
         self.assertEqual(japan_hdi, '0.915 - very high')
         self.assertEqual(japan_area_rank, '61st')
@@ -307,15 +307,15 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(fukuoka_pop_rank, 9)
 
     def test_saga(self):
-        self.assertEqual(raw_sag_pop, ['813,590'])
+        self.assertEqual(raw_sag_pop, ['809,248'])
         self.assertEqual(raw_sag_den, ['330/km', '2', ' (860/sq\xa0mi)'])
         self.assertEqual(raw_sag_gov[0], 'Yoshinori Yamaguchi')
         self.assertEqual(saga_area_rank, 42)
         self.assertEqual(saga_pop_rank, 42)
 
     def test_nagasaki(self):
-        self.assertEqual(raw_nag_pop, ['1,328,478'])
-        self.assertEqual(raw_nag_den, ['320/km', '2', ' (830/sq\xa0mi)'])
+        self.assertEqual(raw_nag_pop, ['1,314,078'])
+        self.assertEqual(raw_nag_den, ['320/km', '2', ' (820/sq\xa0mi)'])
         self.assertEqual(raw_nag_gov[0], 'Hōdō Nakamura')
         self.assertEqual(nagasaki_area_rank, 37)
         self.assertEqual(nagasaki_pop_rank, 27)
@@ -344,7 +344,7 @@ class TestPrefectures(unittest.TestCase):
     def test_kagoshima(self):
         self.assertEqual(raw_kago_pop, ['1,599,779'])
         self.assertEqual(raw_kago_den, ['170/km', '2', ' (450/sq\xa0mi)'])
-        self.assertEqual(raw_kago_gov[0], 'Satoshi Mitazono')
+        self.assertEqual(raw_kago_gov[0], 'Kōichi Shiota')
         self.assertEqual(kagoshima_area_rank, 10)
         self.assertEqual(kagoshima_pop_rank, 24)
 
@@ -353,7 +353,7 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(raw_oki_den, ['640/km', '2', ' (1,700/sq\xa0mi)'])
         self.assertEqual(raw_oki_gov[0], 'Denny Tamaki')
         self.assertEqual(okinawa_area_rank, 44)
-        self.assertEqual(okinawa_pop_rank, 27)
+        self.assertEqual(okinawa_pop_rank, 29)
 
 
 if __name__ == '__main__':
