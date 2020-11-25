@@ -256,6 +256,8 @@ def get_all():
 @app.route('/api/v1/iso_code/<int:iso>')
 def get_by_iso(iso):
     for prefecture in all_prefectures:
+        if iso < 1 iso > 47:
+            return 'Enter number between 1-47'
         if iso == prefecture['iso_code']:
             return jsonify(prefecture)
 
@@ -263,13 +265,18 @@ def get_by_iso(iso):
 @app.route('/api/v1/area_rank/<int:area_rank>')
 def get_by_area_rank(area_rank):
     for prefecture in all_prefectures:
+        if area_rank < 1 or area_rank > 47:
+            return 'Enter number between 1-47'
         if area_rank == prefecture['area_rank']:
             return jsonify(prefecture)
+
 
 
 @app.route('/api/v1/population_rank/<int:population_rank>')
 def get_by_population_rank(population_rank):
     for prefecture in all_prefectures:
+        if population_rank < 1 or population_rank > 47:
+            return 'Enter number between 1-47'
         if population_rank == prefecture['population_rank']:
             return jsonify(prefecture)
 
