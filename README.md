@@ -95,7 +95,7 @@ coming soon...
 * JSON
 
 # ToDo 
-* Add setup.py
+* Add all csv's
 * Manual Testing
 * Add Usage
 

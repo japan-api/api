@@ -6,18 +6,18 @@ from bs4 import BeautifulSoup
 
 japan_page = requests.get('https://en.wikipedia.org/wiki/Japan')
 japan_soup = BeautifulSoup(japan_page.text, 'html.parser')
-raw_ja_pop = japan_soup.find_all('td')[22].find_all(text=True, recursive=True)
-raw_ja_den = japan_soup.find_all('td')[24].find_all(text=True, recursive=True)
-gdp_ppp = japan_soup.find_all('td')[26].find_all(text=True, recursive=True)
-gdp_ppp_per = japan_soup.find_all('td')[27].find_all(text=True, recursive=True)
-gdp_nom = japan_soup.find_all('td')[29].find_all(text=True, recursive=True)
-gdp_nom_per = japan_soup.find_all('td')[30].find_all(text=True, recursive=True)
+raw_ja_pop = japan_soup.find_all('td')[20].find_all(text=True, recursive=True)
+raw_ja_den = japan_soup.find_all('td')[22].find_all(text=True, recursive=True)
+gdp_ppp = japan_soup.find_all('td')[24].find_all(text=True, recursive=True)
+gdp_ppp_per = japan_soup.find_all('td')[25].find_all(text=True, recursive=True)
+gdp_nom = japan_soup.find_all('td')[27].find_all(text=True, recursive=True)
+gdp_nom_per = japan_soup.find_all('td')[28].find_all(text=True, recursive=True)
 japan_emperor = japan_soup.find_all('td')[8].find_all(text=True, recursive=True)
 japan_minister = japan_soup.find_all('td')[9].find_all(text=True, recursive=True)
-raw_gini = japan_soup.find_all('td')[31].find_all(text=True, recursive=True)
-raw_hdi = japan_soup.find_all('td')[32].find_all(text=True, recursive=True)
-raw_ja_ar = japan_soup.find_all('td')[20].find_all(text=True, recursive=True)
-raw_ja_pr = japan_soup.find_all('td')[22].find_all(text=True, recursive=True)
+raw_gini = japan_soup.find_all('td')[29].find_all(text=True, recursive=True)
+raw_hdi = japan_soup.find_all('td')[30].find_all(text=True, recursive=True)
+raw_ja_ar = japan_soup.find_all('td')[18].find_all(text=True, recursive=True)
+raw_ja_pr = japan_soup.find_all('td')[20].find_all(text=True, recursive=True)
 japan_area_rank = f"{raw_ja_ar[-2]}"
 japan_population_rank = f"{raw_ja_pr[-2]}"
 japan_density_rank = f"{raw_ja_den[-2]}"
