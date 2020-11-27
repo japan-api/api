@@ -345,7 +345,7 @@ def get_by_population_rank(population_rank):
 @app.route('/api/v1')
 @app.route('/api/v1/')
 def show_docs():
-    return '<h1><a href="https://github.com/japan-api/docs">API Documentation</a></h1>'
+    return '<h1><a href="https://japan-api.github.io/docs/">API Documentation</a></h1>'
 
 
 @app.route('/api/v1/area_rank/')

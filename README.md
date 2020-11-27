@@ -1,5 +1,5 @@
 # Japan API 🎌
-LINK FOR API - heroku <br>
+LINK FOR API - http://japan-api.herokuapp.com/api/v1/ <br>
 A Complete REST API about Prefectures of Japan using Python 3 and Flask<br>
 Currently there are <b>47</b> (All) prefectures and <b>20</b> fields (May add more)<br>
 Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefectures_of_Japan">Wikipedia</a>,
@@ -10,7 +10,7 @@ If you have noticed some mistakes or bugs, or maybe you have any suggestions ple
 <img src="https://i.imgur.com/mCct5TL.jpg" width="430">
 
 # Docs 📘
-Site with docs is here https://github.com/japan-api/docs
+Site with docs is here https://japan-api.github.io/docs/
 You can use this API to get detailed information aboout Japan <br>
 Japan API has only GET request method<br>
 Japan API has 52 endpoints <br> 
@@ -77,7 +77,7 @@ Japan API has 52 endpoints <br>
 /api/v1/okinawa<br>
 
 # Usage 👩‍💻👨‍💻
-coming soon...
+Just fetch data from the api using GET method
 
 # Quick Start 🚀
 ```git clone https://github.com/japan-api/api``` <br>
@@ -92,9 +92,6 @@ coming soon...
 # What I Learned 🧠
 * Flask basics: routing, serving
 * JSON
-
-# ToDo 
-* Add Usage
 
 # License 📑 
 (c) 2020 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)
