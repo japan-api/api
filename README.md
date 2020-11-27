@@ -1,7 +1,7 @@
 # Japan API 🎌
 LINK FOR API - heroku <br>
 A Complete REST API about Prefectures of Japan using Python 3 and Flask<br>
-<b>WIP!</b> (Testing and deploying, fixing bugs, and typos, adding new fields)<br> Currently there are <b>47</b> (All) prefectures and <b>20</b> fields (May add more)<br>
+Currently there are <b>47</b> (All) prefectures and <b>20</b> fields (May add more)<br>
 Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefectures_of_Japan">Wikipedia</a>,
 <a href="https://www.tofugu.com/japan/japanese-food-by-prefecture/">Food data</a>, <a href="http://www.fukushima.climatemps.com">Climate data</a><br>
 If you have noticed some mistakes or bugs, or maybe you have any suggestions please create an issue.
@@ -20,7 +20,7 @@ Japan API has 52 endpoints <br>
 * Find By ISO code, By population and area rank (Among all prefectures)
 
 ```area_rank, population_rank``` - stands for local Japanese rank between all prefectures (47) <br>
-```area_rank, population_rank, density-rank``` In Japan endpoint means Worldwide rank
+```area_rank, population_rank, density_rank``` In Japan endpoint means Worldwide rank
 
 # List of endpoints 📜
 /api/v1/all <br>
@@ -80,21 +80,20 @@ Japan API has 52 endpoints <br>
 coming soon...
 
 # Quick Start 🚀
-```git clone https://github.com/irevenko/InfoBot.git``` <br>
-```cd japan-api```<br>
+```git clone https://github.com/japan-api/api``` <br>
+```cd api```<br>
 ```pip install requirements.txt OR python -m pip install -r requirements.txt``` <br>
 ```cd tests```<br>
 ```python test_prefectures.py```<br>
 ```cd ../api``` <br>
 ```set FLASK_APP=api.py``` <br>
-```flask run```
+```python -m flask run```
 
 # What I Learned 🧠
 * Flask basics: routing, serving
 * JSON
 
 # ToDo 
-* Manual Testing
 * Add Usage
 
 # License 📑 
