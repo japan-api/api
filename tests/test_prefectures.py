@@ -11,15 +11,15 @@ class TestPrefectures(unittest.TestCase):
     def test_japan(self):
         self.assertEqual(japan_emperor, 'Naruhito')
         self.assertEqual(japan_minister, 'Yoshihide Suga')
-        self.assertEqual(japan_population, '125,960,000')
+        self.assertEqual(japan_population, '125,710,000')
         self.assertEqual(japan_density, '334/km2')
         self.assertEqual(japan_density_mi, '865.1/sq\xa0mi')
-        self.assertEqual(gdp_nom, '$5.080 trillion')
-        self.assertEqual(gdp_ppp, '$5.451 trillion')
-        self.assertEqual(gdp_nom_per, '$40,256')
-        self.assertEqual(gdp_ppp_per, '$43,194')
+        self.assertEqual(gdp_nom, '$4.911 trillion')
+        self.assertEqual(gdp_ppp, '$5.236 trillion')
+        self.assertEqual(gdp_nom_per, '$39,048')
+        self.assertEqual(gdp_ppp_per, '$41,634')
         self.assertEqual(japan_gini, '33.9 - medium')
-        self.assertEqual(japan_hdi, '0.915 - very high')
+        self.assertEqual(japan_hdi, '0.919 - very high')
         self.assertEqual(japan_area_rank, '61st')
         self.assertEqual(japan_population_rank, '11th')
         self.assertEqual(japan_density_rank, '24th')
@@ -134,7 +134,7 @@ class TestPrefectures(unittest.TestCase):
     def test_toyama(self):
         self.assertEqual(raw_toy_pop, ['1,044,588'])
         self.assertEqual(raw_toy_den, ['250/km', '2', ' (640/sq\xa0mi)'])
-        self.assertEqual(raw_toy_gov, ['Takakazu Ishii'])
+        self.assertEqual(raw_toy_gov, ['hatiro nitta'])
         self.assertEqual(toyama_area_rank, 33)
         self.assertEqual(toyama_pop_rank, 37)
 
@@ -223,8 +223,8 @@ class TestPrefectures(unittest.TestCase):
         self.assertEqual(hyogo_pop_rank, 7)
 
     def test_nara(self):
-        self.assertEqual(raw_nar_pop, ['1,348,930'])
-        self.assertEqual(raw_nar_den, ['365.46/km', '2', ' (946.5/sq\xa0mi)'])
+        self.assertEqual(raw_nar_pop, ['1,321,805'])
+        self.assertEqual(raw_nar_den, ['358.10/km', '2', ' (927.5/sq\xa0mi)'])
         self.assertEqual(raw_nar_gov[0], 'Shōgo Arai')
         self.assertEqual(nara_area_rank, 40)
         self.assertEqual(nara_pop_rank, 30)
