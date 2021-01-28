@@ -89,9 +89,13 @@ Just fetch data from the api using GET method
 ```set FLASK_APP=api.py``` <br>
 ```python -m flask run```
 
+# Contributing 🤝
+Contributions, issues and feature requests are welcome! 👍 <br>
+Feel free to check open issues.
+
 # What I Learned 🧠
 * Flask basics: routing, serving
 * JSON
 
 # License 📑 
-(c) 2020 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)
+(c) 2021 Ilya Revenko. [MIT License](https://tldrlegal.com/license/mit-license)

@@ -11,7 +11,7 @@ class TestPrefectures(unittest.TestCase):
     def test_japan(self):
         self.assertEqual(japan_emperor, 'Naruhito')
         self.assertEqual(japan_minister, 'Yoshihide Suga')
-        self.assertEqual(japan_population, '125,710,000')
+        self.assertEqual(japan_population, '125,570,000')
         self.assertEqual(japan_density, '334/km2')
         self.assertEqual(japan_density_mi, '865.1/sq\xa0mi')
         self.assertEqual(gdp_nom, '$4.911 trillion')
