@@ -1,5 +1,5 @@
 # Japan API 🎌
-LINK FOR API - http://japan-api.herokuapp.com/api/v1/ <br>
+LINK FOR API - http://japan-api.ninja/api/v1/ <br>
 A Complete REST API about Prefectures of Japan using Python 3 and Flask<br>
 Currently there are <b>47</b> (All) prefectures and <b>20</b> fields (May add more)<br>
 Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefectures_of_Japan">Wikipedia</a>,
@@ -10,14 +10,15 @@ If you have noticed some mistakes or bugs, or maybe you have any suggestions ple
 <img src="https://i.imgur.com/mCct5TL.jpg" width="430">
 
 # Docs 📘
-Site with docs is here https://japan-api.github.io/docs/
+Site with docs is here https://japan-api.github.io/docs/ <br>
 You can use this API to get detailed information aboout Japan <br>
 Japan API has only GET request method<br>
-Japan API has 52 endpoints <br> 
+Japan API has 54 endpoints <br> 
 * All Prefectures of Japan (47)
 * Japan itself 
 * All prefectures (including Japan)
 * Find By ISO code, By population and area rank (Among all prefectures)
+* Random Prefecture and Random Fact about Japan
 
 ```area_rank, population_rank``` - stands for local Japanese rank between all prefectures (47) <br>
 ```area_rank, population_rank, density_rank``` In Japan endpoint means Worldwide rank
@@ -27,6 +28,8 @@ Japan API has 52 endpoints <br>
 /api/v1/iso/<int:prefecture_iso> - Find by ISO code, list of codes | link > <a href="https://en.wikipedia.org/wiki/ISO_3166-2:JP">JP ISO codes</a> <br>
 /api/v1/population_rank/<int:population_rank> - Find by population rank (Among all prefectures)<br>
 /api/v1/area_rank/<int:area_rank> - Find by area rank (Among all prefectures)<br>
+/api/v1/random_prefecture <br>
+/api/v1/random_fact <br>
 /api/v1/japan  <br>
 /api/v1/hokkaido <br>
 /api/v1/aomori <br>

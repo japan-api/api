@@ -3,6 +3,8 @@ from flask import jsonify
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from prefectures import *
+from japan_facts import *
+import random
 
 limiter = Limiter(
     app,
@@ -344,18 +346,33 @@ def get_by_population_rank(population_rank):
 @app.route('/api/')
 @app.route('/api/v1')
 @app.route('/api/v1/')
+@limiter.limit("3 per minute")
 def show_docs():
     return '<h1><a href="https://japan-api.github.io/docs/">API Documentation</a></h1>'
 
 
 @app.route('/api/v1/area_rank/')
+@limiter.limit("3 per minute")
 def show_area_rank_message():
     return '<h1>Specify the area rank number 1-47</h1>'
 
 @app.route('/api/v1/population_rank/')
+@limiter.limit("3 per minute")
 def show_population_rank_message():
     return '<h1>Specify the population rank number 1-47</h1>'
 
 @app.route('/api/v1/iso_code/')
+@limiter.limit("3 per minute")
 def show_iso_code_message():
     return '<h1>Specify the iso code number 1-47</h1>'
+
+@app.route('/api/v1/random_prefecture')
+@limiter.limit("3 per minute")
+def get_random_prefecture():
+    return jsonify(random.choice(all_prefectures))
+
+@app.route('/api/v1/random_fact')
+@limiter.limit("3 per minute")
+def get_random_fact():
+    return jsonify({"fact": random.choice(japan_facts)})
+
