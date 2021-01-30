@@ -1,5 +1,5 @@
 # Japan API 🎌
-LINK FOR API - http://japan-api.ninja/api/v1/ <br>
+LINK FOR API - https://japan-api.ninja/api/v1/ <br>
 A Complete REST API about Prefectures of Japan using Python 3 and Flask<br>
 Currently there are <b>47</b> (All) prefectures and <b>20</b> fields (May add more)<br>
 Most of the data is taken from the <a href="https://en.wikipedia.org/wiki/Prefectures_of_Japan">Wikipedia</a>,
@@ -95,6 +95,9 @@ Just fetch data from the api using GET method
 # Contributing 🤝
 Contributions, issues and feature requests are welcome! 👍 <br>
 Feel free to check open issues.
+
+# ToDo 
+- Searach for prefectures by the island (Honshu, Kyushu Shikoku, Hokkaido)
 
 # What I Learned 🧠
 * Flask basics: routing, serving
